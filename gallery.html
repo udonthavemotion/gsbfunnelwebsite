@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Cache Control Meta Tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <title>English Bulldog Gallery | Godspeed Bulldogs - Premium Puppies from Houma, LA</title>
+    <meta name="description" content="Browse our gallery of premium English Bulldog puppies, parents, and past litters. Serving the world with health-tested, AKC registered bulldogs from Houma, Louisiana.">
+    
+    <!-- Favicon - Scientifically Optimized for English Bulldog Breeding SEO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/bulldogs/gallery/gb/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/bulldogs/gallery/gb/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/bulldogs/gallery/gb/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/bulldogs/gallery/gb/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/bulldogs/gallery/gb/android-chrome-512x512.png">
+    <link rel="icon" href="assets/images/bulldogs/gallery/gb/favicon.ico">
+    <link rel="manifest" href="assets/images/bulldogs/gallery/gb/site.webmanifest">
+    <meta name="theme-color" content="#FF0000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- SEO and Social Meta Tags -->
+    <link rel="canonical" href="https://www.godspeedbulldogs.com/gallery">
+    <meta property="og:title" content="English Bulldog Gallery | Godspeed Bulldogs - Premium Puppies">
+    <meta property="og:description" content="Browse our gallery of premium English Bulldog puppies, parents, and past litters. Health-tested, AKC registered bulldogs from champion bloodlines.">
+    <meta property="og:url" content="https://www.godspeedbulldogs.com/gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Godspeed Bulldogs">
+    <meta property="og:image" content="https://www.godspeedbulldogs.com/assets/images/bulldogs/gallery/gallery-1.jpg">
+    <meta property="og:image:secure_url" content="https://www.godspeedbulldogs.com/assets/images/bulldogs/gallery/gallery-1.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Godspeed Bulldogs - Premium English Bulldog Gallery">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="English Bulldog Gallery | Godspeed Bulldogs">
+    <meta name="twitter:description" content="Browse our gallery of premium English Bulldog puppies, parents, and past litters.">
+    <meta name="twitter:image" content="https://www.godspeedbulldogs.com/assets/images/bulldogs/gallery/gallery-1.jpg">
+    <meta name="twitter:image:alt" content="Godspeed Bulldogs - Premium English Bulldog Gallery">
+    
+    <!-- Asset Versioning (must be first) -->
+    <script src="/assets/js/versioning.js" defer></script>
+    
+    <!-- DNS Prefetch for External Resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/css/nav.css" as="style">
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/images/bulldogs/videos/IMG_7657.mp4" as="video">
+    
+    <!-- Fonts with display=swap for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS for instant rendering -->
+    <style>
+        /* Prevent layout shift with explicit dimensions */
+        .gallery-image { min-height: 250px; background: #111; }
+        .gallery-item img { opacity: 1 !important; }
+        
+        /* GPU acceleration for smooth animations */
+        .gallery-item {
+            transform: translateZ(0);
+        }
+        
+        /* Optimize transitions */
+        .gallery-item, .gallery-overlay {
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+        
+        /* Gallery hover content */
+        .gallery-hover-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+            pointer-events: none;
+        }
+        
+        .gallery-item:hover .gallery-hover-content {
+            opacity: 1;
+        }
+        
+        .gallery-view-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 10px rgba(255,0,0,0.8));
+        }
+        
+        .gallery-view-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #FFF;
+            text-shadow: 0 0 20px rgba(255,0,0,0.6), 0 0 40px rgba(255,0,0,0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        
+        /* Image hover effects */
+        .gallery-item img {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        filter 0.4s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+            filter: brightness(1.1) contrast(1.05);
+        }
+        
+        /* Lightbox enhancements */
+        #lightboxModal {
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        #lightboxModal .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            animation: scaleIn 0.3s ease-out;
+        }
+        
+        #lightboxModal .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #FFF;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-shadow: 0 0 20px rgba(255,0,0,0.6);
+        }
+        
+        #lightboxModal .lightbox-close:hover {
+            background: rgba(255, 0, 0, 0.4);
+            transform: rotate(90deg);
+        }
+        
+        /* Image loading skeleton */
+        .gallery-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                rgba(255,0,0,0.1) 0%, 
+                rgba(255,0,0,0.2) 50%, 
+                rgba(255,0,0,0.1) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+            z-index: 1;
+            opacity: 0;
+        }
+        
+        .gallery-image img.loaded ~ .gallery-image::before,
+        .gallery-image img.loaded + .gallery-image::before {
+            display: none;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* 🔥 COOL EFFECTS - 3D Tilt & Magnetic Cursor */
+        .gallery-item {
+            transform-style: preserve-3d;
+            transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            will-change: transform;
+        }
+        
+        .gallery-item.magnetic {
+            transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        /* Parallax effect on scroll */
+        .gallery-item.parallax {
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* Particle effect container */
+        .particle-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 3;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 0, 0, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: particleFloat 2s ease-out forwards;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        }
+        
+        @keyframes particleFloat {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--tx), var(--ty)) scale(0);
+            }
+        }
+        
+        /* Image reveal animation */
+        .gallery-image img {
+            opacity: 0;
+            animation: imageReveal 0.8s ease-out forwards;
+        }
+        
+        .gallery-image img.loaded {
+            opacity: 1;
+        }
+        
+        @keyframes imageReveal {
+            0% {
+                opacity: 0;
+                transform: scale(1.1) translateY(20px);
+                filter: blur(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+                filter: blur(0);
+            }
+        }
+        
+        /* Enhanced lightbox with swipe support */
+        #lightboxModal {
+            cursor: grab;
+        }
+        
+        #lightboxModal:active {
+            cursor: grabbing;
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 0, 0, 0.2);
+            color: #FFF;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10000;
+            backdrop-filter: blur(10px);
+            text-shadow: 0 0 20px rgba(255,0,0,0.6);
+        }
+        
+        .lightbox-nav:hover {
+            background: rgba(255, 0, 0, 0.4);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .lightbox-nav.prev {
+            left: 20px;
+        }
+        
+        .lightbox-nav.next {
+            right: 20px;
+        }
+        
+        /* Smooth scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        
+        .scroll-indicator:hover {
+            opacity: 1;
+        }
+        
+        .scroll-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 0, 0, 0.4);
+            border: 2px solid rgba(255, 0, 0, 0.6);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .scroll-dot.active {
+            background: rgba(255, 0, 0, 0.8);
+            transform: scale(1.3);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+        
+        /* Glitch effect on hover */
+        .gallery-item:hover {
+            animation: glitch 0.3s ease-in-out;
+        }
+        
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+        
+        /* Loading shimmer enhancement */
+        .gallery-image::before {
+            opacity: 1;
+        }
+        
+        .gallery-image img.loaded ~ .gallery-image::before,
+        .gallery-image img.loaded + .gallery-image::before {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/nav.css?v=20241009">
+    <link rel="stylesheet" href="assets/css/style.css?v=20241009">
+    <link rel="stylesheet" href="assets/css/brand-colors.css?v=20241111">
+    <link rel="stylesheet" href="assets/css/uiverse-components.css?v=20250115">
+    <link rel="stylesheet" href="assets/css/uiverse-animations.css?v=20250115">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/logo/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico" onerror="this.href='assets/images/original logo/favicon.ico'">
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <img src="assets/images/bulldogs/gallery/Untitled design (92).png" alt="Godspeed Bulldogs" class="mobile-nav-logo-img" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="logo-text" style="display: none;">Godspeed<br><small>Bulldogs</small></span>
+                </a>
+            </div>
+            <ul class="mobile-nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link active">Available Puppies</a></li>
+                <li><a href="waitlist.html" class="nav-link">Join Waitlist</a></li>
+                <li><a href="services.html" class="nav-link">Our Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-nav-cta">
+                <a href="tel:+1-512-555-0100" class="btn btn-secondary">Call Us</a>
+                <a href="waitlist.html" class="btn btn-primary">Join Waitlist</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Navigation Menu - Left positioned -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link active">Available Puppies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="waitlist.html" class="nav-link">Join Waitlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- CTA Buttons and Logo - Right positioned -->
+                <div class="nav-right-group">
+                    <div class="nav-cta">
+                        <a href="tel:+1-512-555-0100" class="btn btn-secondary">Call Us</a>
+                        <a href="waitlist.html" class="btn btn-primary">Join Waitlist</a>
+                    </div>
+                    <!-- Company Logo - Positioned on right side next to Join Waitlist -->
+                    <a href="index.html" class="nav-logo" style="text-decoration: none; color: inherit;">
+                        <img src="assets/images/bulldogs/gallery/Untitled design (92).png" alt="Godspeed Bulldogs" class="nav-logo-img" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="logo-text" style="display: none;">Godspeed<br><small>Bulldogs</small></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION START -->
+    <!-- ============================================ -->
+    <!-- CUSTOMIZATION NOTES:
+         - Update hero video: Change src="assets/images/boat vid.mp4" to your gallery hero video
+         - Update logo: Replace "assets/images/new logo/android-chrome-192x192.png" with your logo
+         - Update page title: Change "Our Professional Work" to your gallery title
+         - Update subtitle: Change "Cars · Boats · Aircraft · Premium Results" to your work types
+         - Update description: Change "See the quality that sets us apart in South Louisiana" to your description
+         - Update brand color: Change #FF6B35 to your accent color
+    -->
+    <!-- Hero Section -->
+    <section class="hero-premium" style="min-height: 50vh;">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translateX(-50%) translateY(-50%); object-fit: cover; filter: brightness(0.9) contrast(1.1);">
+                <source src="assets/images/bulldogs/videos/IMG_7657.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+            <!-- Dark overlay for text readability with red accent -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(255,0,0,0.05) 50%, rgba(0,0,0,0.6) 100%); z-index: 1;"></div>
+        </div>
+        <div class="hero-content-premium">
+            <div class="container">
+                <div class="hero-text-premium text-center">
+                    <div class="hero-badge" style="text-shadow: 0 0 20px rgba(255,0,0,0.6);">OUR BULLDOG FAMILY</div>
+                    <h1 class="hero-title-premium" style="text-shadow: 0 0 30px rgba(255,0,0,0.6), 0 0 60px rgba(255,0,0,0.4);">
+                        <span>GALLERY</span>
+                    </h1>
+                    <p class="hero-subtitle-premium" style="text-shadow: 0 0 15px rgba(255,0,0,0.6), 0 2px 8px rgba(0,0,0,0.8);">
+                        Browse our collection of premium English Bulldogs. Health-tested, AKC registered, champion bloodlines.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO SECTION END -->
+
+    <!-- ============================================ -->
+    <!-- GALLERY GRID SECTION START -->
+    <!-- ============================================ -->
+    <!-- CUSTOMIZATION NOTES:
+         - Update gallery images: Replace all gallery-item images with your portfolio images
+         - Update image paths: Change src paths from "assets/Nick November/IMG_XXXX.JPG" to your image paths
+         - Update image alt text: Change alt text to describe each image
+         - Add/remove gallery items: Duplicate or remove gallery-item divs as needed
+         - Update video items: Replace video sources if you have showcase videos
+         - Update video labels: Change video label text (e.g., "✈️ AVIATION DETAIL")
+         - Note: Keep image dimensions consistent (width="400" height="250") or adjust CSS
+         - Note: All images use loading="lazy" for performance - keep this attribute
+    -->
+    <!-- Gallery Grid -->
+    <section class="gallery-section" style="background: #000; padding: 80px 0;">
+        <div class="container">
+            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                
+                <!-- Bulldog Gallery Images -->
+                <div class="gallery-item card-uiverse-glass" style="background: #000; border-radius: 15px; overflow: hidden; padding: 0;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-1.jpg" alt="Premium English Bulldog Puppy" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay card-uiverse-glass" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease; padding: 0;"></div>
+                        <div class="gallery-hover-content">
+                            <span class="gallery-view-icon">👁️</span>
+                            <span class="gallery-view-text">View Full Size</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item card-uiverse-glass" style="background: #000; border-radius: 15px; overflow: hidden; padding: 0;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-2.jpg" alt="English Bulldog Puppy - Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay card-uiverse-glass" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease; padding: 0;"></div>
+                        <div class="gallery-hover-content">
+                            <span class="gallery-view-icon">👁️</span>
+                            <span class="gallery-view-text">View Full Size</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-3.jpg" alt="Champion Bloodline English Bulldog" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-4.jpg" alt="Premium English Bulldog - Houma Louisiana" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-5.jpg" alt="Premium English Bulldog - Houma LA" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-6.jpg" alt="English Bulldog Puppy - Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-7.jpg" alt="Champion Bloodline English Bulldog" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-8.jpg" alt="English Bulldog Puppy - Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-9.jpg" alt="English Bulldog - Houma, Louisiana" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-10.jpg" alt="Premium English Bulldog Puppy" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-11.jpg" alt="Godspeed Bulldogs - English Bulldog Breeder" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-12.jpg" alt="AKC Registered English Bulldog" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-13.jpg" alt="Health-Tested English Bulldog" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-14.jpg" alt="English Bulldog Puppy - Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-15.jpg" alt="Premium English Bulldog - Houma LA" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-16.jpg" alt="Champion Bloodline Bulldog" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-17.jpg" alt="English Bulldog Breeding - Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-18.jpg" alt="Champion Bloodline English Bulldog - Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-19.jpg" alt="Premium English Bulldog" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-20.jpg" alt="English Bulldog from Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-21.jpg" alt="English Bulldog Puppy - Houma LA" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-22.jpg" alt="Healthy English Bulldog - Godspeed Bulldogs" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-23.jpg" alt="Premium English Bulldog Puppy - Houma" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="background: #000; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: all 0.3s ease;">
+                    <div class="gallery-image" style="position: relative; height: 250px;">
+                        <img src="assets/images/bulldogs/gallery/gallery-24.jpg" alt="English Bulldog - Champion Bloodlines" width="400" height="250" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 0, 0, 0.1); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- GALLERY GRID SECTION END -->
+
+    <!-- ============================================ -->
+    <!-- CTA SECTION START -->
+    <!-- ============================================ -->
+    <!-- CUSTOMIZATION NOTES:
+         - Update CTA title: Change "Ready for This Level of Quality?" to your CTA
+         - Update CTA subtitle: Change description to match your business
+         - Update CTA buttons: Change button text and links
+         - Update phone number: Change to your phone number
+         - Update button colors: Change button colors in CSS to match your brand
+    -->
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2 class="cta-title" style="text-shadow: 0 0 20px rgba(255,0,0,0.6), 0 0 40px rgba(255,0,0,0.4);">Ready to Join Our Waitlist?</h2>
+                <p class="cta-subtitle" style="text-shadow: 0 0 12px rgba(255,0,0,0.6);">Reserve your spot for our next litter. Premium English Bulldogs from champion bloodlines.</p>
+                <div class="cta-buttons">
+                    <a href="waitlist.html" class="btn btn-primary btn-lg">Join Waitlist</a>
+                    <a href="tel:+1-512-555-0100" class="btn btn-secondary btn-lg">Call Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA SECTION END -->
+
+    <!-- ============================================ -->
+    <!-- FOOTER SECTION START -->
+    <!-- ============================================ -->
+    <!-- CUSTOMIZATION NOTES:
+         - Update logo: Change logo path and alt text
+         - Update business name: Change "Godspeed Bulldogs" to your business name
+         - Update footer description: Change description to your business description
+         - Update social links: Replace social media URLs with your social media
+         - Update quick links: Change footer navigation links
+         - Update contact info: Change phone, address to your contact information
+         - Update copyright: Change "2024 Godspeed Bulldogs" to your business name and year
+    -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/bulldogs/gallery/ChatGPT Image Nov 11, 2025, 12_59_40 AM.png" alt="Godspeed Bulldogs" class="logo" onerror="this.src='assets/images/bulldogs/gallery/ChatGPT Image Nov 11, 2025, 12_59_40 AM.png'">
+                        <span class="logo-text">Godspeed<br><small>Bulldogs</small></span>
+                    </div>
+                    <p class="footer-description" style="text-shadow: 0 0 12px rgba(255,0,0,0.6);">Serving the world with premium English Bulldogs from Houma, Louisiana. Health-tested, AKC registered, champion bloodlines.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/godspeedbulldogs/" class="social-link" aria-label="Instagram" style="text-shadow: 0 0 12px rgba(255,0,0,0.6);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" style="text-shadow: 0 0 20px rgba(255,0,0,0.6);">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Available Puppies</a></li>
+                        <li><a href="waitlist.html">Join Waitlist</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title" style="text-shadow: 0 0 20px rgba(255,0,0,0.6);">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:+1-512-555-0100" style="text-shadow: 0 0 12px rgba(255,0,0,0.6);">(512) 555-0100</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span style="text-shadow: 0 0 12px rgba(255,0,0,0.6);">Houma, Louisiana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p style="text-shadow: 0 0 12px rgba(255,0,0,0.6);">&copy; 2024 Godspeed Bulldogs. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); cursor: pointer; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+        <div class="lightbox-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; max-height: 90%;">
+            <img id="lightboxImage" src="" alt="" style="width: 100%; height: auto; border-radius: 10px;">
+            <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+        </div>
+    </div>
+    
+    <!-- Page Loader -->
+    <div class="loading-overlay-uiverse active" id="pageLoader">
+        <span class="spinner-uiverse spinner-uiverse-large"></span>
+    </div>
+
+    <!-- Gallery JavaScript - Optimized -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Performance-optimized gallery with lazy loading and smooth interactions
+        (function() {
+            'use strict';
+            
+            // Lightbox functionality
+            let lightboxModal, lightboxImage;
+            
+            function openLightbox(imageSrc, imageAlt) {
+                if (!lightboxModal) {
+                    lightboxModal = document.getElementById('lightboxModal');
+                    lightboxImage = document.getElementById('lightboxImage');
+                }
+                lightboxImage.src = imageSrc;
+                lightboxImage.alt = imageAlt;
+                lightboxModal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                if (lightboxModal) {
+                    lightboxModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+
+            // Simple and reliable lazy loading
+            function initLazyLoading() {
+                // Native lazy loading is already working via loading="lazy" attribute
+                // Just ensure all images are visible
+                const images = document.querySelectorAll('img[loading="lazy"]');
+                images.forEach(img => {
+                    img.style.opacity = '1';
+                    img.style.transition = 'opacity 0.3s ease-in';
+                });
+            }
+
+            // Throttle function for performance
+            function throttle(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            }
+
+            // 🔥 ADVANCED GALLERY EFFECTS
+            let currentImageIndex = 0;
+            let allGalleryImages = [];
+            
+            // 3D Tilt & Magnetic Cursor Effect
+            function init3DTilt() {
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                
+                galleryItems.forEach(item => {
+                    item.classList.add('magnetic');
+                    
+                    item.addEventListener('mousemove', (e) => {
+                        const rect = item.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const y = e.clientY - rect.top;
+                        
+                        const centerX = rect.width / 2;
+                        const centerY = rect.height / 2;
+                        
+                        const rotateX = (y - centerY) / 10;
+                        const rotateY = (centerX - x) / 10;
+                        
+                        item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+                    }, { passive: true });
+                    
+                    item.addEventListener('mouseleave', () => {
+                        item.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+                    }, { passive: true });
+                });
+            }
+            
+            // Particle Effect on Hover
+            function createParticles(e, container) {
+                const particleCount = 8;
+                for (let i = 0; i < particleCount; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    
+                    const angle = (Math.PI * 2 * i) / particleCount;
+                    const velocity = 50 + Math.random() * 50;
+                    const tx = Math.cos(angle) * velocity;
+                    const ty = Math.sin(angle) * velocity;
+                    
+                    particle.style.setProperty('--tx', tx + 'px');
+                    particle.style.setProperty('--ty', ty + 'px');
+                    particle.style.left = e.offsetX + 'px';
+                    particle.style.top = e.offsetY + 'px';
+                    
+                    container.appendChild(particle);
+                    
+                    setTimeout(() => particle.remove(), 2000);
+                }
+            }
+            
+            // Parallax Scroll Effect
+            function initParallax() {
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                
+                const handleScroll = throttle(() => {
+                    galleryItems.forEach((item, index) => {
+                        const rect = item.getBoundingClientRect();
+                        const scrolled = window.pageYOffset;
+                        const rate = scrolled * -0.1 + (index % 2 === 0 ? 0 : 10);
+                        
+                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                            item.style.transform = `translateY(${rate}px)`;
+                        }
+                    });
+                }, 10);
+                
+                window.addEventListener('scroll', handleScroll, { passive: true });
+            }
+            
+            // Enhanced Lightbox with Navigation
+            function enhanceLightbox() {
+                const galleryItems = document.querySelectorAll('.gallery-item img');
+                allGalleryImages = Array.from(galleryItems).map(img => ({
+                    src: img.src,
+                    alt: img.alt
+                }));
+                
+                // Add navigation buttons
+                const lightboxModal = document.getElementById('lightboxModal');
+                if (lightboxModal && !lightboxModal.querySelector('.lightbox-nav')) {
+                    const prevBtn = document.createElement('button');
+                    prevBtn.className = 'lightbox-nav prev';
+                    prevBtn.innerHTML = '‹';
+                    prevBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        navigateLightbox(-1);
+                    };
+                    
+                    const nextBtn = document.createElement('button');
+                    nextBtn.className = 'lightbox-nav next';
+                    nextBtn.innerHTML = '›';
+                    nextBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        navigateLightbox(1);
+                    };
+                    
+                    lightboxModal.appendChild(prevBtn);
+                    lightboxModal.appendChild(nextBtn);
+                }
+                
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (lightboxModal && lightboxModal.style.display === 'block') {
+                        if (e.key === 'ArrowLeft') navigateLightbox(-1);
+                        if (e.key === 'ArrowRight') navigateLightbox(1);
+                        if (e.key === 'Escape') closeLightbox();
+                    }
+                });
+                
+                // Swipe support for mobile
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                lightboxModal.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+                
+                lightboxModal.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, { passive: true });
+                
+                function handleSwipe() {
+                    if (touchEndX < touchStartX - 50) navigateLightbox(1);
+                    if (touchEndX > touchStartX + 50) navigateLightbox(-1);
+                }
+            }
+            
+            function navigateLightbox(direction) {
+                currentImageIndex = (currentImageIndex + direction + allGalleryImages.length) % allGalleryImages.length;
+                const image = allGalleryImages[currentImageIndex];
+                if (image) {
+                    openLightbox(image.src, image.alt);
+                }
+            }
+            
+            // Image Reveal Animation
+            function initImageReveal() {
+                const images = document.querySelectorAll('.gallery-image img');
+                const imageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry, index) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('loaded');
+                            }, index * 50);
+                            imageObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                images.forEach(img => imageObserver.observe(img));
+            }
+            
+            // Gallery functionality
+            function initGallery() {
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                
+                // Use passive event listeners for better scroll performance
+                const addHoverEffects = (item) => {
+                    const overlay = item.querySelector('.gallery-overlay');
+                    const img = item.querySelector('img');
+                    
+                    if (!img || item.querySelector('video')) return;
+                    
+                    item.style.cursor = 'pointer';
+                    
+                    // Create particle container
+                    const particleContainer = document.createElement('div');
+                    particleContainer.className = 'particle-container';
+                    item.appendChild(particleContainer);
+                    
+                    // Hover effects with particles
+                    item.addEventListener('mouseenter', (e) => {
+                        requestAnimationFrame(() => {
+                            item.style.transform = 'translateY(-5px)';
+                            item.style.boxShadow = '0 10px 30px rgba(255, 255, 255, 0.2)';
+                            if (overlay) {
+                                overlay.style.background = 'rgba(255, 255, 255, 0.1)';
+                                overlay.style.opacity = '1';
+                            }
+                            createParticles(e, particleContainer);
+                        });
+                    }, { passive: true });
+                    
+                    item.addEventListener('mouseleave', () => {
+                        requestAnimationFrame(() => {
+                            item.style.transform = 'translateY(0)';
+                            item.style.boxShadow = 'none';
+                            if (overlay) {
+                                overlay.style.opacity = '0';
+                            }
+                        });
+                    }, { passive: true });
+
+                    // Click to expand
+                    item.addEventListener('click', () => {
+                        if (img.src && !img.src.includes('.mp4')) {
+                            currentImageIndex = allGalleryImages.findIndex(i => i.src === img.src);
+                            if (currentImageIndex === -1) currentImageIndex = 0;
+                            openLightbox(img.src, img.alt);
+                        }
+                    });
+                };
+
+                // Batch DOM operations
+                requestAnimationFrame(() => {
+                    galleryItems.forEach(addHoverEffects);
+                });
+
+                // Close lightbox handlers
+                const modal = document.getElementById('lightboxModal');
+                if (modal) {
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) closeLightbox();
+                    });
+                }
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') closeLightbox();
+                });
+            }
+
+            // Initialize on DOMContentLoaded - ALL COOL EFFECTS 🔥
+            const initAllEffects = () => {
+                initGallery();
+                initLazyLoading();
+                init3DTilt();
+                initParallax();
+                enhanceLightbox();
+                initImageReveal();
+                
+                // Hide page loader
+                setTimeout(() => {
+                    const loader = document.getElementById('pageLoader');
+                    if (loader) loader.classList.remove('active');
+                }, 500);
+            };
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initAllEffects);
+            } else {
+                initAllEffects();
+            }
+
+            // Expose closeLightbox globally for inline onclick
+            window.closeLightbox = closeLightbox;
+            window.openLightbox = openLightbox;
+        })();
+    </script>
+    
+    <script src="assets/js/nav.js" defer></script>
+    
+    <!-- Build Info -->
+    <script>
+      console.info("[Build] HTML no-cache active; asset version:", window.__ASSET_VERSION__);
+    </script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .catch(console.error);
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to the Waitlist! | Godspeed Bulldogs</title>
+  
+  <!-- Favicon - Scientifically Optimized for English Bulldog Breeding SEO -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/bulldogs/gallery/gb/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/bulldogs/gallery/gb/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/bulldogs/gallery/gb/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/bulldogs/gallery/gb/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/bulldogs/gallery/gb/android-chrome-512x512.png">
+  <link rel="icon" href="assets/images/bulldogs/gallery/gb/favicon.ico">
+  <link rel="manifest" href="assets/images/bulldogs/gallery/gb/site.webmanifest">
+  <meta name="theme-color" content="#FF0000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background: linear-gradient(135deg, #000 0%, #1a0000 100%);
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .thank-you-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    
+    .thank-you-content {
+      text-align: center;
+      max-width: 700px;
+      background: rgba(10,10,10,0.8);
+      padding: 60px 40px;
+      border-radius: 20px;
+      border: 2px solid rgba(255,0,0,0.3);
+      box-shadow: 0 0 50px rgba(255,0,0,0.3);
+    }
+    
+    .success-icon {
+      font-size: 80px;
+      margin-bottom: 30px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    
+    .thank-you-content h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900;
+      margin-bottom: 20px;
+      text-shadow: 0 0 30px rgba(255,0,0,0.6), 0 0 60px rgba(255,0,0,0.4);
+      color: #FFF;
+    }
+    
+    .thank-you-content p {
+      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+      color: rgba(255,255,255,0.9);
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-shadow: 0 0 15px rgba(255,0,0,0.4);
+    }
+    
+    .next-steps {
+      background: rgba(255,0,0,0.05);
+      border: 1px solid rgba(255,0,0,0.2);
+      border-radius: 15px;
+      padding: 30px;
+      margin: 40px 0;
+      text-align: left;
+    }
+    
+    .next-steps h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px rgba(255,0,0,0.6);
+      text-align: center;
+    }
+    
+    .next-steps ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .next-steps li {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255,0,0,0.1);
+      display: flex;
+      align-items: flex-start;
+      text-shadow: 0 0 12px rgba(255,0,0,0.4);
+    }
+    
+    .next-steps li:last-child {
+      border-bottom: none;
+    }
+    
+    .next-steps li span:first-child {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    .social-follow {
+      margin: 40px 0 30px;
+    }
+    
+    .social-follow h3 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px rgba(255,0,0,0.6);
+    }
+    
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: rgba(255,0,0,0.1);
+      border: 2px solid rgba(255,0,0,0.3);
+      border-radius: 50%;
+      color: #FFF;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(255,0,0,0.2);
+    }
+    
+    .social-icons a:hover {
+      background: #FF0000;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,0,0,0.5);
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .btn {
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+      color: white;
+      border: none;
+      box-shadow: 0 0 20px rgba(255,0,0,0.4);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255,0,0,0.6);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid #FF0000;
+      box-shadow: 0 0 15px rgba(255,0,0,0.3);
+    }
+    
+    .btn-secondary:hover {
+      background: #FF0000;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255,0,0,0.6);
+    }
+    
+    @media (max-width: 768px) {
+      .thank-you-content {
+        padding: 40px 25px;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+      }
+      
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="thank-you-container">
+    <section class="thank-you-content">
+      <div class="success-icon">🎉</div>
+      
+      <h1>You're On the List!</h1>
+      
+      <p>
+        Congratulations! You've successfully joined the Godspeed Bulldogs waitlist. 
+        We're excited to help you find your perfect English Bulldog companion.
+      </p>
+      
+      <div class="next-steps">
+        <h2>What Happens Next?</h2>
+        <ul>
+          <li>
+            <span>📧</span>
+            <span><strong>Check Your Email:</strong> You'll receive a confirmation email within the next few minutes with more information about our process.</span>
+          </li>
+          <li>
+            <span>📸</span>
+            <span><strong>Exclusive Updates:</strong> We'll send you weekly photos and videos of our puppies as they grow.</span>
+          </li>
+          <li>
+            <span>📞</span>
+            <span><strong>Personal Contact:</strong> We'll reach out within 24-48 hours to discuss your preferences and answer any questions.</span>
+          </li>
+          <li>
+            <span>🐕</span>
+            <span><strong>First Selection:</strong> When our next litter is ready, you'll get priority access before anyone else.</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="social-follow">
+        <h3>Follow Our Journey</h3>
+        <p style="margin-bottom: 20px; font-size: 0.95rem;">Stay connected for daily puppy photos and behind-the-scenes content!</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/godspeedbulldogs/" target="_blank" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/godspeedbulldogs" target="_blank" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@godspeedbulldogs" target="_blank" aria-label="TikTok">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="cta-buttons">
+        <a class="btn btn-primary" href="gallery.html">View Available Puppies</a>
+        <a class="btn btn-secondary" href="index.html">Back to Home</a>
+        <a class="btn btn-secondary" href="tel:+1-512-555-0100">Call Us Now</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+

@@ -1,0 +1,668 @@
+/* Godspeed Bulldogs Card Component - Transformed from Uiverse.io */
+/* From Uiverse.io by Smit-Prajapati - Adapted for Godspeed Bulldogs Brand */
+
+/* CSS Variables - Godspeed Bulldogs Design System */
+:root {
+    /* Brand Colors - Red/Black/White System */
+    --color-primary: #FF0000;
+    --color-secondary: #CC0000;
+    --color-accent: #FF3333;
+    --color-background: #000000;
+    --color-surface: #0a0a0a;
+    --color-text: #ffffff;
+    --color-text-muted: #ffffff;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #FF0000 0%, #CC0000 50%, #000000 100%);
+    --gradient-accent: linear-gradient(135deg, #FF3333 0%, #FF0000 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+    /* Shadows & Glows */
+    --shadow-card: 0 0 40px rgba(255, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.8);
+    --shadow-card-hover: 0 0 60px rgba(255, 0, 0, 0.5), 0 20px 40px rgba(0, 0, 0, 0.9);
+    --shadow-social: 0 4px 14px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.4);
+    --glow-primary: 0 0 20px rgba(255, 0, 0, 0.8);
+    --glow-secondary: 0 0 20px rgba(255, 0, 0, 0.6);
+    --glow-accent: 0 0 20px rgba(255, 0, 0, 0.8);
+
+    /* Dimensions & Spacing */
+    --card-width: 290px;
+    --card-height: 300px;
+    --card-radius: 50px;
+    --glass-radius: 55px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 60px;
+
+    /* Typography */
+    --font-family: 'Poppins', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 800;
+
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Z-indexes */
+    --z-card: 1;
+    --z-glass: 2;
+    --z-content: 3;
+    --z-logo: 4;
+}
+
+/* Base Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Parent Container */
+.parent {
+    width: var(--card-width);
+    height: var(--card-height);
+    perspective: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Card Component */
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--card-radius);
+    background: var(--gradient-primary);
+    background-image: 
+        radial-gradient(circle at top right, rgba(255, 0, 0, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #FF0000 0%, #CC0000 30%, #000000 70%, #000000 100%);
+    transition: var(--transition-slow);
+    transform-style: preserve-3d;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    z-index: var(--z-card);
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    /* Hardware acceleration for smooth animations */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform, box-shadow;
+}
+
+/* Glass Morphism Effect */
+.glass {
+    transform-style: preserve-3d;
+    position: absolute;
+    inset: var(--spacing-xs);
+    border-radius: var(--glass-radius);
+    background: var(--gradient-glass);
+
+    /* Enhanced glass effect with backdrop-filter */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* Fallback for browsers without backdrop-filter - More black */
+    background: rgba(0, 0, 0, 0.5);
+
+    transform: translate3d(0px, 0px, 25px);
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-left: 2px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+    transition: var(--transition-slow);
+    z-index: var(--z-glass);
+
+    /* Hardware acceleration */
+    transform: translate3d(0px, 0px, 25px) translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Content Area */
+.content {
+    padding: calc(var(--spacing-xl) + var(--spacing-lg)) var(--spacing-xl) 0px var(--spacing-lg);
+    transform: translate3d(0, 0, 26px);
+    z-index: var(--z-content);
+    position: relative;
+
+    /* Hardware acceleration */
+    transform: translate3d(0, 0, 26px) translateZ(0);
+    backface-visibility: hidden;
+}
+
+.content .title {
+    display: block;
+    color: #FFFFFF;
+    font-weight: var(--font-weight-black);
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.9);
+    z-index: calc(var(--z-content) + 1);
+    position: relative;
+}
+
+.content .text {
+    display: block;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-light);
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.9);
+    z-index: calc(var(--z-content) + 1);
+    position: relative;
+}
+
+/* Bottom Section */
+.bottom {
+    padding: var(--spacing-sm) var(--spacing-md);
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: var(--spacing-md);
+    left: var(--spacing-md);
+    right: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate3d(0, 0, 26px);
+    z-index: var(--z-content);
+
+    /* Hardware acceleration */
+    transform: translate3d(0, 0, 26px) translateZ(0);
+    backface-visibility: hidden;
+}
+
+.bottom .view-more {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-start;
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.bottom .view-more:hover {
+    transform: translate3d(0, 0, 10px);
+}
+
+.bottom .view-more .view-more-button {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 0, 0, 0.6);
+    color: #FFFFFF;
+    font-weight: var(--font-weight-semibold);
+    font-size: 14px;
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    transition: var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    z-index: calc(var(--z-content) + 1);
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(255, 0, 0, 0.1);
+
+    /* Focus styles for accessibility */
+    outline: none;
+}
+
+.bottom .view-more .view-more-button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.bottom .view-more .view-more-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: rgba(255, 0, 0, 1);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.2);
+    text-shadow: 0 0 15px rgba(255, 0, 0, 1);
+}
+
+.bottom .view-more .svg {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2px;
+    max-height: 16px;
+    margin-left: var(--spacing-xs);
+    transition: var(--transition-fast);
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8));
+}
+
+.bottom .view-more:hover .svg {
+    stroke: #FFFFFF;
+    filter: drop-shadow(0 0 12px rgba(255, 0, 0, 1));
+    transform: translateX(3px);
+}
+
+/* Social Buttons */
+.bottom .social-buttons-container {
+    display: flex;
+    gap: var(--spacing-sm);
+    transform-style: preserve-3d;
+
+    /* Hardware acceleration */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.bottom .social-buttons-container .social-button {
+    width: 36px;
+    aspect-ratio: 1;
+    padding: 8px;
+    background: #000000;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 0, 0, 0.6);
+    display: grid;
+    place-content: center;
+    box-shadow: var(--shadow-social), inset 0 0 10px rgba(255, 0, 0, 0.2);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    z-index: calc(var(--z-content) + 2);
+    position: relative;
+
+    /* Staggered animation delays */
+    animation: socialButtonEnter 0.5s ease-out backwards;
+}
+
+.bottom .social-buttons-container .social-button:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.bottom .social-buttons-container .social-button:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.bottom .social-buttons-container .social-button:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.bottom .social-buttons-container .social-button .svg {
+    width: 18px;
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    stroke-width: 0.5px;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8));
+    transition: var(--transition-fast);
+}
+
+.bottom .social-buttons-container .social-button:hover {
+    background: #000000;
+    border-color: rgba(255, 0, 0, 1);
+    transform: translateY(-3px) scale(1.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+.bottom .social-buttons-container .social-button:hover .svg {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    filter: drop-shadow(0 0 12px rgba(255, 0, 0, 1));
+    transform: scale(1.1);
+}
+
+.bottom .social-buttons-container .social-button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.bottom .social-buttons-container .social-button:active {
+    transform: translateY(-1px) scale(1.1);
+    background: #000000;
+    border-color: rgba(255, 0, 0, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 0, 0, 0.8), inset 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.bottom .social-buttons-container .social-button:active .svg {
+    fill: #FFFFFF;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 1));
+}
+
+/* Logo/Brand Element */
+.logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    z-index: var(--z-logo);
+
+    /* Hardware acceleration */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.logo .circle {
+    display: block;
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top: var(--spacing-xs);
+    right: var(--spacing-xs);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    transition: var(--transition-slow);
+
+    /* Hardware acceleration */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.logo .circle1 {
+    width: 170px;
+    transform: translate3d(0, 0, 20px);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(255, 0, 0, 0.1) 100%);
+}
+
+.logo .circle2 {
+    width: 140px;
+    transform: translate3d(0, 0, 40px);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0.15) 100%);
+    transition-delay: 0.4s;
+}
+
+.logo .circle3 {
+    width: 110px;
+    transform: translate3d(0, 0, 60px);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0.2) 100%);
+    transition-delay: 0.8s;
+}
+
+.logo .circle4 {
+    width: 80px;
+    transform: translate3d(0, 0, 80px);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(255, 0, 0, 0.25) 100%);
+    transition-delay: 1.2s;
+}
+
+.logo .circle5 {
+    width: 50px;
+    transform: translate3d(0, 0, 100px);
+    display: grid;
+    place-content: center;
+    background: radial-gradient(circle, #FF0000 0%, #000000 100%);
+    transition-delay: 1.6s;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), inset 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.logo .circle5 .svg {
+    width: 20px;
+    fill: var(--color-text);
+}
+
+/* Hover Effects */
+.parent:hover .card {
+    transform: rotate3d(1, 1, 0, 30deg);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.parent:hover .card .bottom .social-buttons-container .social-button {
+    transform: translate3d(0, 0, 50px);
+    box-shadow: 0 8px 20px rgba(0, 212, 170, 0.3);
+}
+
+.parent:hover .card .logo .circle2 {
+    transform: translate3d(0, 0, 60px);
+}
+
+.parent:hover .card .logo .circle3 {
+    transform: translate3d(0, 0, 80px);
+}
+
+.parent:hover .card .logo .circle4 {
+    transform: translate3d(0, 0, 100px);
+}
+
+.parent:hover .card .logo .circle5 {
+    transform: translate3d(0, 0, 120px);
+}
+
+/* Social Media Variants */
+.social-square .parent {
+    width: 320px;
+    height: 320px;
+}
+
+.social-vertical .parent {
+    width: 280px;
+    height: 420px;
+}
+
+/* Accessibility & Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .glass,
+    .content,
+    .bottom,
+    .logo .circle,
+    .bottom .view-more,
+    .bottom .social-buttons-container .social-button,
+    .bottom .view-more .svg {
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .parent:hover .card {
+        transform: none;
+    }
+
+    .parent:hover .card .bottom .social-buttons-container .social-button {
+        transform: none;
+    }
+
+    .parent:hover .card .logo .circle2,
+    .parent:hover .card .logo .circle3,
+    .parent:hover .card .logo .circle4,
+    .parent:hover .card .logo .circle5 {
+        transform: translateZ(0);
+    }
+
+    .bottom .view-more:hover .svg {
+        transform: none;
+    }
+
+    .bottom .social-buttons-container .social-button:hover {
+        transform: none;
+    }
+}
+
+/* Focus Management */
+.card:focus-within {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .glass {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .content .title {
+        color: var(--color-text);
+        text-shadow: none;
+    }
+
+    .content .text {
+        color: var(--color-text);
+        opacity: 1;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .card {
+        break-inside: avoid;
+        box-shadow: none;
+        transform: none !important;
+    }
+
+    .bottom .social-buttons-container,
+    .logo {
+        display: none;
+    }
+}
+
+/* Animations */
+@keyframes socialButtonEnter {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .parent {
+        width: 280px;
+        height: 290px;
+    }
+
+    .social-square .parent {
+        width: 300px;
+        height: 300px;
+    }
+
+    .social-vertical .parent {
+        width: 260px;
+        height: 380px;
+    }
+
+    .content {
+        padding: calc(var(--spacing-xl) + var(--spacing-md)) var(--spacing-lg) 0px var(--spacing-md);
+    }
+
+    .content .title {
+        font-size: 18px;
+    }
+
+    .content .text {
+        font-size: 14px;
+    }
+
+    .bottom {
+        bottom: var(--spacing-sm);
+        left: var(--spacing-sm);
+        right: var(--spacing-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .bottom .view-more .view-more-button {
+        font-size: 12px;
+        padding: 6px var(--spacing-xs);
+    }
+
+    .bottom .social-buttons-container .social-button {
+        width: 28px;
+        padding: 5px;
+    }
+
+    .bottom .social-buttons-container .social-button .svg {
+        width: 14px;
+    }
+
+    .logo .circle1 {
+        width: 140px;
+    }
+
+    .logo .circle2 {
+        width: 110px;
+    }
+
+    .logo .circle3 {
+        width: 80px;
+    }
+
+    .logo .circle4 {
+        width: 60px;
+    }
+
+    .logo .circle5 {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .parent {
+        width: 260px;
+        height: 270px;
+    }
+
+    .social-square .parent {
+        width: 280px;
+        height: 280px;
+    }
+
+    .social-vertical .parent {
+        width: 240px;
+        height: 340px;
+    }
+
+    .content .title {
+        font-size: 16px;
+    }
+
+    .content .text {
+        font-size: 13px;
+    }
+
+    .bottom .view-more .view-more-button {
+        font-size: 11px;
+    }
+
+    .bottom .social-buttons-container {
+        gap: 8px;
+    }
+
+    .bottom .social-buttons-container .social-button {
+        width: 26px;
+        padding: 4px;
+    }
+
+    .bottom .social-buttons-container .social-button .svg {
+        width: 12px;
+    }
+}
+
+/* Performance Optimizations */
+.card,
+.glass,
+.content,
+.bottom,
+.logo .circle {
+    contain: layout style paint;
+    content-visibility: auto;
+}
+
+/* Fallback for browsers without backdrop-filter */
+@supports not (backdrop-filter: blur(8px)) {
+    .glass {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+    }
+
+    .logo .circle {
+        background: rgba(0, 212, 170, 0.2);
+    }
+}
+
+/* Dark mode support (future-proofing) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #000000;
+        --color-surface: #0a0a0a;
+    }
+}

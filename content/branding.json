@@ -1,0 +1,32 @@
+{
+  "colors": {
+    "primary": "#FF0000",
+    "primaryDark": "#CC0000",
+    "secondary": "#FFFFFF",
+    "accent": "#FF0000",
+    "background": "#000000",
+    "text": "#FFFFFF",
+    "textSecondary": "#CCCCCC",
+    "redGlow": "0 0 20px rgba(255, 0, 0, 0.6)"
+  },
+  "fonts": {
+    "primary": "Poppins",
+    "weights": [300, 400, 500, 600, 700, 800],
+    "googleFonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+  },
+  "logos": {
+    "favicon": "assets/images/logo/favicon-32x32.png",
+    "hero": "assets/images/logo/godspeed-logo.png",
+    "footer": "assets/images/logo/godspeed-logo-white.png",
+    "appleTouch": "assets/images/logo/apple-touch-icon.png",
+    "manifest": "assets/images/logo/site.webmanifest"
+  },
+  "theme": {
+    "name": "dark-luxury",
+    "primaryBg": "#000",
+    "cardBg": "#0a0a0a",
+    "borderColor": "#333",
+    "redAccent": "#FF0000",
+    "style": "luxury-streetwear-fusion"
+  }
+}

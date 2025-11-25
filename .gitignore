@@ -1,0 +1,45 @@
+# Development and Documentation Files
+knowledge base/
+*.md
+!README.md
+
+# Development variants and backups
+*.orig.html
+*.preview.html
+*.tsx
+
+# System Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (if any)
+node_modules/
+
+# Build outputs (if any)
+dist/
+build/

@@ -1,0 +1,719 @@
+/* ============================================
+   UIVERSE.IO COMPONENTS - GODSPEED BULLDOGS
+   Brand: Black/White/Red with Red Glow
+   Font: Poppins
+   Created: January 2025
+   ============================================ */
+
+/* Base Variables */
+:root {
+    --uiverse-red: #FF0000;
+    --uiverse-red-dark: #CC0000;
+    --uiverse-black: #000000;
+    --uiverse-white: #FFFFFF;
+    --uiverse-glow: 0 0 20px rgba(255,0,0,0.6);
+    --uiverse-glow-strong: 0 0 30px rgba(255,0,0,0.8);
+    --uiverse-glow-subtle: 0 0 12px rgba(255,0,0,0.4);
+    --uiverse-font: 'Poppins', sans-serif;
+    --uiverse-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   ENHANCED BUTTONS
+   ============================================ */
+
+/* Primary CTA Button */
+.btn-uiverse-primary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+    border: none;
+    border-radius: 30px;
+    color: #FFF;
+    font-family: var(--uiverse-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--uiverse-transition);
+    text-shadow: var(--uiverse-glow);
+    box-shadow: 0 0 30px rgba(255,0,0,0.4);
+    z-index: 1;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn-uiverse-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s ease;
+    z-index: -1;
+}
+
+.btn-uiverse-primary:hover::before {
+    left: 100%;
+}
+
+.btn-uiverse-primary:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #CC0000 0%, #FF0000 100%);
+    box-shadow: 0 8px 40px rgba(255,0,0,0.6), 0 0 60px rgba(255,0,0,0.4);
+    text-shadow: var(--uiverse-glow-strong);
+}
+
+.btn-uiverse-primary:active {
+    transform: translateY(-1px);
+}
+
+.btn-uiverse-primary:focus-visible {
+    outline: 2px solid #FF0000;
+    outline-offset: 3px;
+}
+
+.btn-uiverse-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Button Arrow Icon */
+.btn-uiverse-primary .btn-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.btn-uiverse-primary:hover .btn-arrow {
+    transform: translateX(5px);
+}
+
+/* Secondary Outline Button */
+.btn-uiverse-outline {
+    position: relative;
+    display: inline-block;
+    padding: 18px 36px;
+    background: transparent;
+    border: 2px solid #FF0000;
+    border-radius: 30px;
+    color: #FFF;
+    font-family: var(--uiverse-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--uiverse-transition);
+    text-shadow: var(--uiverse-glow);
+    box-shadow: 0 0 20px rgba(255,0,0,0.3);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn-uiverse-outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.btn-uiverse-outline:hover::before {
+    width: 100%;
+}
+
+.btn-uiverse-outline:hover {
+    color: #FFF;
+    border-color: #FF0000;
+    box-shadow: 0 0 30px rgba(255,0,0,0.6), 0 0 50px rgba(255,0,0,0.4);
+    text-shadow: var(--uiverse-glow-strong);
+}
+
+.btn-uiverse-outline:focus-visible {
+    outline: 2px solid #FF0000;
+    outline-offset: 3px;
+}
+
+/* Ripple Effect for Buttons */
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   GLASSMORPHISM CARDS
+   ============================================ */
+
+.card-uiverse-glass {
+    position: relative;
+    background: rgba(17, 17, 17, 0.6);
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 40px 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(255, 0, 0, 0.1),
+                inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    transition: var(--uiverse-transition);
+    overflow: hidden;
+}
+
+.card-uiverse-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(255,0,0,0.08) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.card-uiverse-glass:hover::before {
+    opacity: 1;
+}
+
+.card-uiverse-glass:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 0, 0, 0.3);
+    box-shadow: 0 12px 48px rgba(255, 0, 0, 0.2),
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.card-uiverse-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Icon */
+.card-uiverse-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+/* Card Title */
+.card-uiverse-title {
+    font-family: var(--uiverse-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 15px;
+    text-shadow: var(--uiverse-glow);
+    text-align: center;
+}
+
+/* Card Description */
+.card-uiverse-description {
+    font-family: var(--uiverse-font);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-shadow: var(--uiverse-glow-subtle);
+    text-align: center;
+}
+
+/* Card Link */
+.card-uiverse-link {
+    display: inline-block;
+    color: #FF0000;
+    font-family: var(--uiverse-font);
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--uiverse-transition);
+    text-shadow: 0 0 15px rgba(255,0,0,0.6);
+}
+
+.card-uiverse-link:hover {
+    color: #FFF;
+    text-shadow: var(--uiverse-glow-strong);
+    transform: translateX(5px);
+}
+
+/* ============================================
+   FORM INPUTS (Default - Red Theme)
+   ============================================ */
+
+.input-uiverse-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-uiverse {
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 0, 0, 0.3);
+    border-radius: 12px;
+    color: #FFF;
+    font-family: var(--uiverse-font);
+    font-size: 1rem;
+    transition: var(--uiverse-transition);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-uiverse::placeholder {
+    color: transparent;
+}
+
+.input-uiverse:focus {
+    border-color: #FF0000;
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.input-uiverse-label {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--uiverse-font);
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: none;
+    transition: var(--uiverse-transition);
+    text-shadow: var(--uiverse-glow-subtle);
+    background: transparent;
+}
+
+.input-uiverse:focus + .input-uiverse-label,
+.input-uiverse:not(:placeholder-shown) + .input-uiverse-label,
+.input-uiverse.has-value + .input-uiverse-label {
+    top: -12px;
+    left: 12px;
+    font-size: 0.85rem;
+    color: #FF0000;
+    text-shadow: var(--uiverse-glow);
+    background: #000;
+    padding: 0 8px;
+}
+
+.input-uiverse-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF0000, #CC0000);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(255,0,0,0.6);
+}
+
+.input-uiverse:focus ~ .input-uiverse-underline {
+    width: 100%;
+}
+
+/* Select Dropdown */
+.select-uiverse-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.select-uiverse-wrapper .input-error-message {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+}
+
+.select-uiverse {
+    width: 100%;
+    padding: 16px 50px 16px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 0, 0, 0.3);
+    border-radius: 12px;
+    color: #FFF;
+    font-family: var(--uiverse-font);
+    font-size: 1rem;
+    cursor: pointer;
+    appearance: none;
+    transition: var(--uiverse-transition);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.select-uiverse:focus {
+    border-color: #FF0000;
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.select-uiverse-label {
+    position: absolute;
+    left: 20px;
+    top: -12px;
+    font-size: 0.85rem;
+    color: #FF0000;
+    font-family: var(--uiverse-font);
+    font-weight: 500;
+    background: #000;
+    padding: 0 8px;
+    text-shadow: var(--uiverse-glow);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Select label always visible (positioned above) */
+.select-uiverse-label {
+    display: block;
+}
+
+.select-uiverse-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.select-uiverse:focus ~ .select-uiverse-arrow {
+    transform: translateY(-50%) rotate(180deg);
+    color: #FF0000;
+}
+
+/* Textarea */
+.textarea-uiverse {
+    width: 100%;
+    min-height: 120px;
+    padding: 16px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 0, 0, 0.3);
+    border-radius: 12px;
+    color: #FFF;
+    font-family: var(--uiverse-font);
+    font-size: 1rem;
+    transition: var(--uiverse-transition);
+    outline: none;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.textarea-uiverse::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.textarea-uiverse:focus {
+    border-color: #FF0000;
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ============================================
+   LOADING SPINNERS
+   ============================================ */
+
+.spinner-uiverse {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 0, 0, 0.2);
+    border-top-color: #FF0000;
+    border-radius: 50%;
+    animation: spin-uiverse 1s linear infinite;
+    box-shadow: 0 0 10px rgba(255,0,0,0.4);
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.spinner-uiverse-large {
+    width: 50px;
+    height: 50px;
+    border-width: 4px;
+    margin: 0 auto;
+    display: block;
+}
+
+@keyframes spin-uiverse {
+    to { transform: rotate(360deg); }
+}
+
+/* Loading Overlay */
+.loading-overlay-uiverse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.loading-overlay-uiverse.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ============================================
+   INTEGRATION WITH EXISTING STYLES
+   ============================================ */
+
+/* Ensure service-card works with glassmorphism */
+.service-card.card-uiverse-glass {
+    background-color: transparent;
+    border: 1px solid rgba(255, 0, 0, 0.15);
+    box-shadow: 0 8px 32px rgba(255, 0, 0, 0.1),
+                inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.service-card.card-uiverse-glass:hover {
+    border-color: rgba(255, 0, 0, 0.3);
+    box-shadow: 0 12px 48px rgba(255, 0, 0, 0.2),
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Maintain existing service-card styles */
+.service-card .service-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card .service-title.card-uiverse-title {
+    margin-bottom: 15px;
+}
+
+.service-card .service-description.card-uiverse-description {
+    margin-bottom: 20px;
+}
+
+.service-card .service-price {
+    margin-bottom: 20px;
+}
+
+/* Button integration */
+.btn-uiverse-primary,
+.btn-uiverse-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero CTA integration */
+.hero-cta-premium .btn-uiverse-primary,
+.hero-cta-premium .btn-uiverse-outline {
+    margin: 0 10px 10px 0;
+}
+
+@media (max-width: 768px) {
+    .hero-cta-premium .btn-uiverse-primary,
+    .hero-cta-premium .btn-uiverse-outline {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+}
+
+/* CTA buttons integration */
+.cta-buttons .btn-uiverse-primary,
+.cta-buttons .btn-uiverse-outline {
+    margin: 0 10px 10px 10px;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons .btn-uiverse-primary,
+    .cta-buttons .btn-uiverse-outline {
+        width: calc(100% - 20px);
+        margin: 0 10px 15px 10px;
+    }
+}
+
+/* ============================================
+   FORM VALIDATION STYLES
+   ============================================ */
+
+.input-uiverse.error,
+.select-uiverse.error,
+.textarea-uiverse.error {
+    border-color: #FF0000 !important;
+    box-shadow: 0 0 20px rgba(255,0,0,0.6) !important;
+    animation: shake-uiverse 0.5s ease;
+}
+
+.input-uiverse-wrapper.error,
+.select-uiverse-wrapper.error {
+    margin-bottom: 40px;
+}
+
+@keyframes shake-uiverse {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.input-error-message {
+    color: #FF0000;
+    font-family: var(--uiverse-font);
+    font-size: 0.85rem;
+    margin-top: 8px;
+    text-shadow: 0 0 10px rgba(255,0,0,0.6);
+    display: none;
+    font-weight: 500;
+}
+
+.input-uiverse-wrapper.error .input-error-message,
+.select-uiverse-wrapper.error .input-error-message {
+    display: block;
+    animation: fadeInUp 0.3s ease-out;
+}
+
+/* Required field indicator */
+.required {
+    color: #FF0000;
+    margin-left: 4px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255,0,0,0.6);
+}
+
+/* Form error message container */
+.form-error-message {
+    background: rgba(255,0,0,0.1);
+    border: 1px solid rgba(255,0,0,0.3);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--uiverse-font);
+    text-shadow: 0 0 15px rgba(255,0,0,0.6);
+    animation: fadeInUp 0.3s ease-out;
+}
+
+/* Success state (optional) */
+.input-uiverse.success,
+.select-uiverse.success,
+.textarea-uiverse.success {
+    border-color: rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0,255,0,0.3);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .btn-uiverse-primary,
+    .btn-uiverse-outline {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+    
+    .card-uiverse-glass {
+        padding: 30px 20px;
+    }
+    
+    .card-uiverse-title {
+        font-size: 1.25rem;
+    }
+    
+    .card-uiverse-description {
+        font-size: 0.9rem;
+    }
+    
+    .input-uiverse,
+    .select-uiverse,
+    .textarea-uiverse {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-uiverse-primary,
+    .btn-uiverse-outline {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .card-uiverse-glass {
+        padding: 25px 15px;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-uiverse-primary,
+    .btn-uiverse-outline,
+    .card-uiverse-glass,
+    .spinner-uiverse,
+    .ripple-effect {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .btn-uiverse-primary:hover,
+    .btn-uiverse-outline:hover,
+    .card-uiverse-glass:hover {
+        transform: none;
+    }
+}
+
+/* Focus states for keyboard navigation */
+.btn-uiverse-primary:focus-visible,
+.btn-uiverse-outline:focus-visible,
+.input-uiverse:focus-visible,
+.select-uiverse:focus-visible,
+.textarea-uiverse:focus-visible {
+    outline: 2px solid #FF0000;
+    outline-offset: 3px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card-uiverse-glass {
+        border-width: 2px;
+    }
+    
+    .input-uiverse,
+    .select-uiverse,
+    .textarea-uiverse {
+        border-width: 3px;
+    }
+}
+

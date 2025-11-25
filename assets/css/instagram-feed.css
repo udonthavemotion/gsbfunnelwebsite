@@ -1,0 +1,417 @@
+/* ============================================ */
+/* Instagram Feed Widget - Premium Styling */
+/* ============================================ */
+
+/* Container Wrapper */
+.sk-instagram-feed {
+    position: relative;
+    padding: 60px 20px;
+    background: #000;
+    margin: 0 auto;
+    max-width: 1400px;
+    overflow: hidden;
+}
+
+/* Animated Background Pattern */
+.sk-instagram-feed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 0, 0, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 107, 53, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+    animation: backgroundPulse 8s ease-in-out infinite;
+}
+
+@keyframes backgroundPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Grid Container */
+.sk-instagram-feed > div,
+.sk-instagram-feed iframe {
+    position: relative;
+    z-index: 1;
+    border-radius: 0 !important;
+}
+
+/* Individual Instagram Post Cards */
+.sk-instagram-feed .sk-instagram-post,
+.sk-instagram-feed [class*="instagram-post"],
+.sk-instagram-feed [class*="post-item"] {
+    background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Hover Effect - Lift & Glow */
+.sk-instagram-feed .sk-instagram-post:hover,
+.sk-instagram-feed [class*="instagram-post"]:hover,
+.sk-instagram-feed [class*="post-item"]:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    border-color: rgba(255, 107, 53, 0.5) !important;
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(255, 107, 53, 0.2),
+        inset 0 0 20px rgba(255, 107, 53, 0.05) !important;
+    z-index: 10 !important;
+}
+
+/* Image Container */
+.sk-instagram-feed img,
+.sk-instagram-feed [class*="post-image"] img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    filter: brightness(0.95) contrast(1.05) !important;
+    border-radius: 0 !important;
+}
+
+/* Image Hover - Zoom & Brighten */
+.sk-instagram-feed .sk-instagram-post:hover img,
+.sk-instagram-feed [class*="instagram-post"]:hover img,
+.sk-instagram-feed [class*="post-item"]:hover img {
+    transform: scale(1.08) !important;
+    filter: brightness(1.1) contrast(1.1) saturate(1.1) !important;
+}
+
+/* Overlay on Hover */
+.sk-instagram-feed .sk-instagram-post::after,
+.sk-instagram-feed [class*="instagram-post"]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 107, 53, 0.1) 0%,
+        rgba(255, 0, 0, 0.05) 50%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 2;
+    border-radius: 12px;
+}
+
+.sk-instagram-feed .sk-instagram-post:hover::after,
+.sk-instagram-feed [class*="instagram-post"]:hover::after {
+    opacity: 1;
+}
+
+/* Instagram Icon Badge */
+.sk-instagram-feed [class*="instagram-icon"],
+.sk-instagram-feed [class*="icon"] {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease !important;
+    opacity: 0.8;
+}
+
+.sk-instagram-feed [class*="instagram-icon"]:hover,
+.sk-instagram-feed [class*="icon"]:hover {
+    background: rgba(255, 107, 53, 0.9) !important;
+    transform: scale(1.1) rotate(5deg) !important;
+    opacity: 1;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.5) !important;
+}
+
+/* Caption/Text Styling */
+.sk-instagram-feed [class*="caption"],
+.sk-instagram-feed [class*="post-caption"],
+.sk-instagram-feed p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
+    padding: 12px !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* Like/Comment Counts */
+.sk-instagram-feed [class*="likes"],
+.sk-instagram-feed [class*="comments"],
+.sk-instagram-feed [class*="engagement"] {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 8px rgba(255, 107, 53, 0.5) !important;
+}
+
+/* Grid Layout Enhancements */
+.sk-instagram-feed [class*="grid"],
+.sk-instagram-feed [class*="feed-grid"] {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 20px !important;
+    padding: 20px 0 !important;
+}
+
+@media (min-width: 768px) {
+    .sk-instagram-feed [class*="grid"],
+    .sk-instagram-feed [class*="feed-grid"] {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 24px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sk-instagram-feed [class*="grid"],
+    .sk-instagram-feed [class*="feed-grid"] {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 30px !important;
+    }
+}
+
+/* Loading State */
+.sk-instagram-feed [class*="loading"],
+.sk-instagram-feed [class*="spinner"] {
+    border-color: rgba(255, 107, 53, 0.3) !important;
+    border-top-color: rgba(255, 107, 53, 0.8) !important;
+}
+
+/* Section Header Styling (if you add one above the feed) */
+.instagram-section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.instagram-section-header h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 
+        0 0 20px rgba(255, 0, 0, 0.6),
+        0 0 40px rgba(255, 107, 53, 0.4),
+        0 6px 20px rgba(0, 0, 0, 0.8);
+    animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+    0%, 100% {
+        text-shadow: 
+            0 0 20px rgba(255, 0, 0, 0.6),
+            0 0 40px rgba(255, 107, 53, 0.4),
+            0 6px 20px rgba(0, 0, 0, 0.8);
+    }
+    50% {
+        text-shadow: 
+            0 0 30px rgba(255, 0, 0, 0.9),
+            0 0 60px rgba(255, 107, 53, 0.6),
+            0 6px 20px rgba(0, 0, 0, 0.8);
+    }
+}
+
+.instagram-section-header p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 12px rgba(255, 107, 53, 0.4);
+}
+
+/* Follow Button Enhancement */
+.instagram-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #FF6B35, #ff8c5a);
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram-follow-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.instagram-follow-btn:hover::before {
+    left: 100%;
+}
+
+.instagram-follow-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+    background: linear-gradient(135deg, #ff8c5a, #FF6B35);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .sk-instagram-feed {
+        padding: 40px 15px;
+    }
+    
+    .sk-instagram-feed [class*="grid"],
+    .sk-instagram-feed [class*="feed-grid"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    
+    .sk-instagram-feed .sk-instagram-post:hover,
+    .sk-instagram-feed [class*="instagram-post"]:hover {
+        transform: translateY(-4px) scale(1.01) !important;
+    }
+    
+    .instagram-section-header h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sk-instagram-feed [class*="grid"],
+    .sk-instagram-feed [class*="feed-grid"] {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
+
+/* Animation for Posts on Load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sk-instagram-feed .sk-instagram-post,
+.sk-instagram-feed [class*="instagram-post"] {
+    animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.sk-instagram-feed .sk-instagram-post:nth-child(1),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(1) { animation-delay: 0.1s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(2),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(2) { animation-delay: 0.2s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(3),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(3) { animation-delay: 0.3s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(4),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(4) { animation-delay: 0.4s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(5),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(5) { animation-delay: 0.5s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(6),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(6) { animation-delay: 0.6s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(7),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(7) { animation-delay: 0.7s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(8),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(8) { animation-delay: 0.8s; }
+.sk-instagram-feed .sk-instagram-post:nth-child(9),
+.sk-instagram-feed [class*="instagram-post"]:nth-child(9) { animation-delay: 0.9s; }
+
+/* Shimmer Effect on Images */
+.sk-instagram-feed .sk-instagram-post::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: left 0.8s ease;
+    z-index: 3;
+    pointer-events: none;
+    border-radius: 12px;
+}
+
+.sk-instagram-feed .sk-instagram-post:hover::before {
+    left: 100%;
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .sk-instagram-feed .sk-instagram-post,
+    .sk-instagram-feed [class*="instagram-post"],
+    .sk-instagram-feed img {
+        animation: none !important;
+        transition: opacity 0.2s ease !important;
+    }
+    
+    .sk-instagram-feed .sk-instagram-post:hover,
+    .sk-instagram-feed [class*="instagram-post"]:hover {
+        transform: none !important;
+    }
+    
+    .instagram-section-header h2 {
+        animation: none !important;
+    }
+}
+
+/* Dark Mode Override (ensures consistency) */
+.sk-instagram-feed * {
+    color-scheme: dark;
+}
+
+/* Ensure iframe styling */
+.sk-instagram-feed iframe {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.4s ease !important;
+}
+
+.sk-instagram-feed iframe:hover {
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(255, 107, 53, 0.2) !important;
+}
+
+

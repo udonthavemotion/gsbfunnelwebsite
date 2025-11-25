@@ -1,0 +1,179 @@
+/* 
+ * Godspeed Bulldogs - 2025 Modern Color Psychology
+ * Primary: Vibrant Teal/Turquoise (#00D4AA) - Trust, Health, Growth
+ * Secondary: Electric Blue (#4F46E5) - Innovation, Reliability
+ * Accent: Fresh Green (#10B981) - Vitality, Nature, Health
+ */
+
+:root {
+    /* Primary Brand Colors - 2025 Modern Psychology */
+    --primary-teal: #00D4AA;
+    --primary-blue: #4F46E5;
+    --accent-green: #10B981;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #00D4AA 0%, #4F46E5 100%);
+    --gradient-accent: linear-gradient(135deg, #10B981 0%, #00D4AA 100%);
+    
+    /* Glow Effects */
+    --glow-teal: 0 0 20px rgba(0, 212, 170, 0.6);
+    --glow-blue: 0 0 20px rgba(79, 70, 229, 0.6);
+    --glow-green: 0 0 20px rgba(16, 185, 129, 0.6);
+    --glow-combined: 0 0 20px rgba(0, 212, 170, 0.4), 0 0 40px rgba(79, 70, 229, 0.3);
+}
+
+/* Global Text Glow - Modern Teal/Blue */
+body, p, span, a, li, td, th, label, .text-white, .white-text,
+.footer *, .nav-link, .logo-text, .section-title, .section-subtitle,
+.hero-title, .hero-subtitle, .cta-title, .cta-subtitle,
+.footer-title, .footer-description, .footer-links a,
+.contact-info, .contact-item, .contact-item a, .contact-item span {
+    color: #FFF;
+    text-shadow: var(--glow-teal);
+}
+
+/* Enhanced glow for headings */
+h1, h2, h3, .section-title, .hero-title-premium {
+    text-shadow: var(--glow-combined);
+}
+
+/* Links maintain glow on hover */
+a:hover {
+    text-shadow: var(--glow-blue);
+}
+
+/* CTA Buttons - Modern Gradient */
+.btn-primary, .nav-cta .btn-primary, .mobile-nav-cta .btn-primary {
+    background: var(--gradient-primary) !important;
+    box-shadow: 0 4px 14px rgba(0, 212, 170, 0.4) !important;
+    text-shadow: none !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4F46E5 0%, #00D4AA 100%) !important;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5) !important;
+    transform: translateY(-2px);
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+    background: rgba(16, 185, 129, 0.1) !important;
+    border: 2px solid var(--accent-green) !important;
+    color: var(--accent-green) !important;
+    text-shadow: var(--glow-green) !important;
+}
+
+.btn-secondary:hover {
+    background: var(--accent-green) !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Navigation Active State */
+.nav-link.active {
+    color: var(--primary-teal) !important;
+    text-shadow: var(--glow-teal) !important;
+}
+
+.nav-link::after {
+    background: var(--gradient-primary) !important;
+}
+
+/* Section Badges */
+.section-badge, [style*="rgba(255, 0, 0"] {
+    background: rgba(0, 212, 170, 0.1) !important;
+    border-color: rgba(0, 212, 170, 0.3) !important;
+}
+
+.section-badge span, [style*="color: #FF0000"] span {
+    color: var(--primary-teal) !important;
+}
+
+/* Process Steps */
+.step-number, .process-step .step-number {
+    background: var(--gradient-primary) !important;
+    box-shadow: 0 4px 14px rgba(0, 212, 170, 0.3);
+}
+
+/* Service Cards Border */
+.service-card, .gallery-item {
+    border-color: rgba(0, 212, 170, 0.2) !important;
+}
+
+.service-card:hover, .gallery-item:hover {
+    border-color: rgba(79, 70, 229, 0.4) !important;
+    box-shadow: 0 8px 24px rgba(0, 212, 170, 0.2);
+}
+
+/* Gallery Overlay */
+.gallery-overlay {
+    background: rgba(0, 212, 170, 0.1) !important;
+}
+
+/* Footer Links */
+.footer-links a:hover {
+    color: var(--primary-teal) !important;
+    text-shadow: var(--glow-teal) !important;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    border-color: rgba(0, 212, 170, 0.2) !important;
+}
+
+/* Feature Icons */
+.feature-icon {
+    background: var(--gradient-accent);
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+/* Inline Style Overrides */
+[style*="color: #FF0000"] {
+    color: var(--primary-teal) !important;
+}
+
+[style*="rgba(255, 0, 0"] {
+    color: var(--primary-teal) !important;
+}
+
+[style*="text-shadow"][style*="255, 0, 0"] {
+    text-shadow: var(--glow-teal) !important;
+}
+
+/* Headings with inline red */
+h1 [style*="color: #FF0000"],
+h2 [style*="color: #FF0000"],
+h3 [style*="color: #FF0000"],
+span[style*="color: #FF0000"] {
+    color: var(--primary-teal) !important;
+    text-shadow: var(--glow-teal) !important;
+}
+
+/* Background Gradients */
+[style*="background: linear-gradient"][style*="#FF0000"] {
+    background: var(--gradient-primary) !important;
+}
+
+/* Border Colors */
+[style*="border"][style*="255, 0, 0"] {
+    border-color: rgba(0, 212, 170, 0.3) !important;
+}
+
+/* Box Shadows */
+[style*="box-shadow"][style*="255, 0, 0"] {
+    box-shadow: 0 4px 14px rgba(0, 212, 170, 0.4) !important;
+}
+
+/* Mobile Menu */
+.mobile-nav-menu .nav-link:hover,
+.mobile-nav-menu .nav-link.active {
+    color: var(--primary-teal) !important;
+    text-shadow: var(--glow-teal) !important;
+}
+
+/* Theme Color Meta Tag Update */
+meta[name="theme-color"] {
+    content: "#00D4AA";
+}
+

@@ -1,0 +1,120 @@
+{
+  "services": [
+    {
+      "id": "available-puppies",
+      "name": "Available Puppies",
+      "description": "Browse our current litter of premium English Bulldog puppies. Each puppy is AKC registered, health-tested, and comes with a comprehensive care package.",
+      "price": "$6,500 - $8,500",
+      "priceRange": "$6,500 - $8,500",
+      "features": [
+        "AKC registered",
+        "Full health guarantee",
+        "Veterinary health check",
+        "First vaccinations",
+        "Microchipped",
+        "Puppy care package included",
+        "Lifetime breeder support"
+      ],
+      "image": "assets/images/bulldogs/puppy-hero.jpg",
+      "cta": "View Available Puppies",
+      "ctaLink": "gallery.html"
+    },
+    {
+      "id": "waitlist",
+      "name": "Join Our Waitlist",
+      "description": "Get priority access to our upcoming litters. Waitlist members receive first selection and exclusive updates throughout the pregnancy and whelping process.",
+      "price": "Free",
+      "priceRange": "No cost to join",
+      "features": [
+        "Priority puppy selection",
+        "Early access to litter announcements",
+        "Behind-the-scenes updates",
+        "Educational resources",
+        "No obligation commitment",
+        "Direct breeder communication"
+      ],
+      "image": "assets/images/bulldogs/parents-hero.jpg",
+      "cta": "Join Waitlist",
+      "ctaLink": "waitlist.html"
+    },
+    {
+      "id": "stud-service",
+      "name": "Stud Services",
+      "description": "Premium English Bulldog stud services available. Our males are health-tested, champion-bloodline, and proven producers of quality offspring.",
+      "price": "Contact for Pricing",
+      "priceRange": "Custom pricing",
+      "features": [
+        "Champion bloodlines",
+        "Health-tested studs",
+        "Proven breeding record",
+        "AI services available",
+        "Breeding contract included",
+        "Professional guidance"
+      ],
+      "image": "assets/images/bulldogs/stud-hero.jpg",
+      "cta": "Learn More",
+      "ctaLink": "contact.html"
+    },
+    {
+      "id": "puppy-care-package",
+      "name": "Puppy Care Package",
+      "description": "Every Godspeed Bulldogs puppy comes with a comprehensive care package to ensure a smooth transition to their new home.",
+      "price": "Included with Purchase",
+      "priceRange": "Included",
+      "features": [
+        "Starter food supply",
+        "Training guide",
+        "Favorite toys and blanket",
+        "Health records",
+        "AKC registration papers",
+        "Lifetime breeder support",
+        "Bulldog care resources"
+      ],
+      "image": "assets/images/bulldogs/care-package.jpg",
+      "cta": "Learn More",
+      "ctaLink": "#care-package"
+    }
+  ],
+  "packages": [
+    {
+      "id": "reservation-deposit",
+      "name": "Puppy Reservation",
+      "price": "$1,000",
+      "description": "Secure your spot with a refundable deposit",
+      "features": [
+        "Reserve your puppy",
+        "Applied to final purchase price",
+        "Refundable per contract terms",
+        "Locks in current pricing",
+        "Priority communication"
+      ]
+    },
+    {
+      "id": "full-price-male",
+      "name": "Male English Bulldog",
+      "price": "$6,500",
+      "description": "Premium male English Bulldog puppy",
+      "features": [
+        "AKC registered",
+        "Health guarantee",
+        "Complete care package",
+        "Lifetime support",
+        "Microchipped & vaccinated"
+      ]
+    },
+    {
+      "id": "full-price-female",
+      "name": "Female English Bulldog",
+      "price": "$8,500",
+      "description": "Premium female English Bulldog puppy",
+      "features": [
+        "AKC registered",
+        "Health guarantee",
+        "Complete care package",
+        "Lifetime support",
+        "Microchipped & vaccinated",
+        "Breeding rights available"
+      ]
+    }
+  ]
+}

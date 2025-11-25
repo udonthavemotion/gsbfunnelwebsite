@@ -1,0 +1,104 @@
+# Godspeed Bulldogs Website - Cursor AI Rules
+
+## Project Identity
+You are working on the Godspeed Bulldogs website - a premium English Bulldog breeding business website owned by Logan Folse in Austin, Texas. This website was transformed from a Southside Detail & Tint auto detailing template. The site's primary purpose is to capture waitlist signups and reserve deposits for upcoming litters.
+
+## Business Context
+- Business: Godspeed Bulldogs (English Bulldog breeder)
+- Owner: Logan Folse
+- Location: Austin, Texas
+- Next litter: Spring 2026
+- Pricing: $6,500-$8,500 per puppy
+- Target audience: Gen Z & Millennials (25-40 years old)
+- First litter success: Sold to professional athletes (Jalen Reed, Maason)
+
+## Brand Guidelines - CRITICAL
+- **Color Palette**: Black (#000), White (#FFF), Red (#FF0000)
+- **Visual Style**: Luxury-streetwear fusion aesthetic
+- **MANDATORY**: ALL white text MUST have red glow effect: `text-shadow: 0 0 20px rgba(255,0,0,0.6)` or similar
+- **Typography**: Poppins font family (weights: 300, 400, 500, 600, 700, 800)
+- **Logo Paths**: `/assets/images/logo/` (with fallback to `/assets/images/original logo/`)
+
+## Technical Stack
+- Pure HTML/CSS/JavaScript (NO frameworks)
+- GoHighLevel CRM integration via webhook forms
+- Mobile-first responsive design (test on 375px, 414px, 768px)
+- Performance-optimized: lazy loading, image optimization
+- Hero section uses image carousel (NOT video) for better performance
+
+## Development Standards
+- **Mobile-First**: Always design for mobile first, then scale up
+- **Performance Targets**: Lighthouse 90+ mobile, 95+ desktop
+- **Images**: Use lazy loading (`loading="lazy"`), responsive srcset where appropriate
+- **Touch Targets**: Minimum 44x44px for mobile
+- **No Emojis**: Unless explicitly requested by user
+- **Red Glow**: Apply to ALL white text elements (headings, body text, links, buttons, footer)
+- **Code Style**: Clean, semantic HTML; organized CSS; vanilla JavaScript
+
+## File Structure
+- **Config Files**: `/content/*.json` (business-info, branding, services, testimonials, social-links)
+- **Images**: `/assets/images/bulldogs/` (hero, gallery, parents, lifestyle subfolders)
+- **Pages**: `index.html`, `waitlist.html`, `thank-you.html`, `gallery.html`
+- **Styling**: `/assets/css/` (nav.css, style.css, products-grid.css, products.css)
+- **Scripts**: `/assets/js/` (nav.js, main.js, versioning.js)
+- **Knowledge Base**: `/knowledge base/` (reference docs for GHL integration, business logic)
+
+## GoHighLevel Integration
+- **Form Action**: `https://services.leadconnectorhq.com/hooks/WEBHOOK_ID_HERE` (placeholder - replace with actual webhook)
+- **Form Fields**: first_name, last_name, email, phone, budget_range, timeline, preferred_gender, referral_source, comments
+- **Hidden Fields**: source="Waitlist Form", tags="Waitlist,Website Lead"
+- **Success Redirect**: `thank-you.html`
+- **Field Mapping**: Map to GHL custom fields (Budget Range, Timeline, Gender Preference, Lead Source)
+
+## Project Status
+
+### Completed ✅
+- Homepage transformation (index.html) - hero carousel, services, about sections
+- Waitlist form page (waitlist.html) - GHL-ready with proper field mapping
+- Thank you page (thank-you.html) - confirmation with next steps
+- Navigation & footer - updated across all pages
+- All JSON configuration files - business info, branding, services, testimonials, social links
+- SEO & meta tags - optimized for "English Bulldog breeder Austin TX"
+- Image organization - 4 hero images + 24 gallery images copied and organized
+
+### Pending ⏳
+- Gallery page transformation (gallery.html) - masonry layout with lazy loading
+- Terms of Service update (terms-of-service.html) - breeding niche, maintain A2P compliance
+- Privacy Policy update (privacy-policy.html) - breeding business context
+- Performance optimization pass - additional lazy loading, image compression
+- Comprehensive mobile testing - multiple viewports and devices
+
+## Key Requirements
+1. **Waitlist Capture**: Primary goal - capture leads via waitlist form
+2. **Reserve Deposits**: Secondary goal - $1,000 deposit collection (handled in GHL, not website)
+3. **Mobile Optimization**: 100% mobile testing required for all changes
+4. **Performance**: Ship minimal JS, lazy-load images, optimize assets
+5. **Brand Consistency**: Red glow on white text, black/white/red color scheme throughout
+
+## Code Patterns
+- **Hero Images**: Use opacity transitions for carousel (smooth, performant)
+- **Forms**: Large touch targets, clear labels, proper validation
+- **Buttons**: Red gradient background (#FF0000 to #CC0000), hover effects with glow
+- **Sections**: Dark backgrounds with subtle red accents
+- **Text**: White text with red glow shadow for visibility and brand consistency
+
+## Knowledge Base Reference
+- Master guide: `/knowledge base/godspeed_bulldogs_master_guide.md`
+- MVP checklist: `/knowledge base/$99 ZeroMotion Breeder System - MVP MUST-HAVE CHECKLIST.md`
+- Technical breakdown: `/knowledge base/technical_breakdown.md`
+- Business context: Owner is building this as a reusable snapshot to sell to other breeders ($99 setup + $99/month)
+
+## Next Steps Priority
+1. Gallery page with bulldog images + masonry layout + lightbox
+2. Terms of Service update (keep A2P SMS compliance language)
+3. Privacy Policy update
+4. Performance optimization (lazy loading, image compression, Lighthouse audit)
+5. Mobile testing across devices
+
+## Important Notes
+- This is a reusable template - code should be maintainable and well-documented
+- A2P compliance is critical for SMS/communication - don't remove consent language
+- All forms must integrate with GoHighLevel webhooks
+- Images are sourced from Instagram export in `/godspeedbulldogs` folder
+- Test all changes on mobile viewports before marking complete
+

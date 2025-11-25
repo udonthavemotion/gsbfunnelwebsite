@@ -1,0 +1,41 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "Getting our bulldog from Godspeed was the best decision we ever made. Logan's knowledge and support throughout the process was incredible. Our puppy is healthy, well-socialized, and has the perfect temperament. Worth every penny!",
+      "author": "Jalen Reed",
+      "title": "Professional Athlete",
+      "rating": 5,
+      "image": "assets/images/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 2,
+      "quote": "Godspeed Bulldogs sets the standard for ethical breeding. From the moment we joined the waitlist to bringing our puppy home, Logan was transparent, communicative, and genuinely cared about finding the perfect match. Our bulldog is family now!",
+      "author": "Maason",
+      "title": "Professional Athlete",
+      "rating": 5,
+      "image": "assets/images/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 3,
+      "quote": "I researched breeders for months before finding Godspeed Bulldogs. Logan's health-first approach and commitment to the breed is unmatched. Our English Bulldog is thriving and we couldn't be happier. Highly recommend!",
+      "author": "Sarah M.",
+      "title": "Houma, LA",
+      "rating": 5,
+      "image": "assets/images/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 4,
+      "quote": "The entire experience with Godspeed Bulldogs exceeded our expectations. Professional, knowledgeable, and truly passionate about their dogs. Our puppy came home healthy, well-adjusted, and ready to be part of our family.",
+      "author": "Michael & Jessica T.",
+      "title": "New Orleans, LA",
+      "rating": 5,
+      "image": "assets/images/blank-profile-picture-973460_1280.png"
+    }
+  ],
+  "statistics": {
+    "recommendationRate": "100%",
+    "platform": "Direct Client Feedback",
+    "repeatCustomers": "Multiple clients from first litter"
+  }
+}
