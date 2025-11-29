@@ -26,6 +26,7 @@ nul
 
 # Source media files (not for deployment)
 DOGS/
+!assets/images/bulldogs/dogs/
 *.pdf
 
 # Archive files
