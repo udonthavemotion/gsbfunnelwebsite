@@ -1237,14 +1237,6 @@
     <script>
       console.info("[Build] HTML no-cache active; asset version:", window.__ASSET_VERSION__);
     </script>
-    
-    <!-- Service Worker Registration -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
-          .catch(console.error);
-      }
-    </script>
 
 </body>
 </html> 
