@@ -1,0 +1,454 @@
+/* ============================================
+   PUPPY CARD COMPONENT - Uiverse Adaptation
+   From: Uiverse.io hover expand card
+   Brand: Godspeed Bulldogs (Cyan/Green/Black)
+   ============================================ */
+
+/* Base Card Container */
+.uiverse-puppy-card {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8), 
+              0 0 20px rgba(0, 229, 255, 0.2);
+  border: 2px solid rgba(0, 229, 255, 0.3);
+  background: #000;
+  
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform, box-shadow;
+}
+
+/* Image Container */
+.uiverse-puppy-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+/* Image Overlay for better text readability */
+.uiverse-puppy-card-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.7) 40%,
+    transparent 100%
+  );
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+/* Content Container */
+.uiverse-puppy-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 20px;
+  z-index: 3;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Status Badge */
+.uiverse-puppy-card-status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.uiverse-puppy-card-status.status-available {
+  background: rgba(0, 255, 136, 0.15);
+  color: #00ff88;
+  border-color: #00ff88;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+}
+
+.uiverse-puppy-card-status.status-reserved {
+  background: rgba(0, 229, 255, 0.15);
+  color: #00e5ff;
+  border-color: #00e5ff;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+.uiverse-puppy-card-status.status-coming-soon {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+.uiverse-puppy-card-status.status-sold {
+  background: rgba(128, 128, 128, 0.2);
+  color: #888888;
+  border-color: #555555;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* Title */
+.uiverse-puppy-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.8),
+               0 2px 8px rgba(0, 0, 0, 0.9);
+  line-height: 1.2;
+}
+
+/* Subtitle (color, gender, etc) */
+.uiverse-puppy-card-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 12px rgba(0, 229, 255, 0.5),
+               0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Price */
+.uiverse-puppy-card-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00ff88;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.8),
+               0 2px 6px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.5px;
+}
+
+/* CTA Overlay (appears on hover) */
+.uiverse-puppy-card-cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 36px;
+  background: linear-gradient(135deg, #00e5ff 0%, #00ff88 100%);
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.6);
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.8);
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.uiverse-puppy-card-cta .cta-arrow {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  transition: transform 0.3s ease;
+}
+
+/* Corner Decorative Elements (Uiverse hover expand effect) */
+.uiverse-puppy-card::before,
+.uiverse-puppy-card::after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 229, 255, 0.6);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+}
+
+.uiverse-puppy-card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 18px 0 100%;
+}
+
+.uiverse-puppy-card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 18px;
+}
+
+/* ============================================
+   HOVER EFFECTS
+   ============================================ */
+
+.uiverse-puppy-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9),
+              0 0 40px rgba(0, 229, 255, 0.5),
+              0 0 80px rgba(0, 255, 136, 0.2);
+  border-color: rgba(0, 229, 255, 0.8);
+}
+
+.uiverse-puppy-card:hover .uiverse-puppy-card-image {
+  transform: scale(1.1);
+}
+
+.uiverse-puppy-card:hover .uiverse-puppy-card-image-overlay {
+  opacity: 0.95;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.98) 0%,
+    rgba(0, 0, 0, 0.85) 60%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+.uiverse-puppy-card:hover .uiverse-puppy-card-content {
+  transform: translateY(-10px);
+}
+
+.uiverse-puppy-card:hover .uiverse-puppy-card-cta {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.uiverse-puppy-card:hover .uiverse-puppy-card-cta .cta-arrow {
+  transform: translateX(5px);
+}
+
+/* Corner expansion on hover */
+.uiverse-puppy-card:hover::before,
+.uiverse-puppy-card:hover::after {
+  width: 50%;
+  height: 50%;
+  border-color: rgba(0, 229, 255, 0.9);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.4);
+}
+
+/* ============================================
+   FOCUS STATES (Accessibility)
+   ============================================ */
+
+.uiverse-puppy-card:focus-visible {
+  outline: 3px solid #00e5ff;
+  outline-offset: 4px;
+  border-color: #00e5ff;
+}
+
+.uiverse-puppy-card:focus-visible::before,
+.uiverse-puppy-card:focus-visible::after {
+  border-color: #00e5ff;
+}
+
+/* ============================================
+   ACTIVE/PRESSED STATE
+   ============================================ */
+
+.uiverse-puppy-card:active {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.9),
+              0 0 30px rgba(0, 229, 255, 0.6);
+}
+
+/* ============================================
+   GRID LAYOUT HELPER
+   ============================================ */
+
+.uiverse-puppy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1200px) {
+  .uiverse-puppy-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 35px;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uiverse-puppy-card {
+    max-width: 100%;
+    height: 380px;
+  }
+  
+  .uiverse-puppy-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .uiverse-puppy-card-price {
+    font-size: 1.25rem;
+  }
+  
+  .uiverse-puppy-card-cta {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+  
+  .uiverse-puppy-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 40px 15px;
+  }
+  
+  /* Make corners slightly smaller on mobile */
+  .uiverse-puppy-card::before,
+  .uiverse-puppy-card::after {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .uiverse-puppy-card {
+    height: 360px;
+  }
+  
+  .uiverse-puppy-card-content {
+    padding: 20px 15px;
+  }
+  
+  .uiverse-puppy-card-title {
+    font-size: 1.35rem;
+  }
+  
+  .uiverse-puppy-card-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .uiverse-puppy-card-price {
+    font-size: 1.15rem;
+  }
+  
+  .uiverse-puppy-card-cta {
+    padding: 12px 24px;
+    font-size: 0.85rem;
+  }
+  
+  .uiverse-puppy-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 15px;
+  }
+}
+
+/* ============================================
+   LOADING STATE
+   ============================================ */
+
+.uiverse-puppy-card.loading .uiverse-puppy-card-image {
+  background: linear-gradient(
+    90deg,
+    #111 0%,
+    #222 50%,
+    #111 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ============================================
+   ACCESSIBILITY & MOTION PREFERENCES
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .uiverse-puppy-card,
+  .uiverse-puppy-card-image,
+  .uiverse-puppy-card-content,
+  .uiverse-puppy-card-cta,
+  .uiverse-puppy-card::before,
+  .uiverse-puppy-card::after {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .uiverse-puppy-card:hover {
+    transform: none;
+  }
+  
+  .uiverse-puppy-card:hover .uiverse-puppy-card-image {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .uiverse-puppy-card {
+    border-width: 3px;
+  }
+  
+  .uiverse-puppy-card-status {
+    border-width: 3px;
+    font-weight: 900;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .uiverse-puppy-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 2px solid #000;
+  }
+  
+  .uiverse-puppy-card::before,
+  .uiverse-puppy-card::after,
+  .uiverse-puppy-card-cta {
+    display: none;
+  }
+}
+
+
+

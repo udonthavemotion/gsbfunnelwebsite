@@ -4,10 +4,10 @@
 :root {
   /* ===== COLOR PALETTE ===== */
 
-  /* Primary Brand Colors */
-  --color-primary: #00D4AA;      /* Vibrant Teal - Trust, Health, Growth */
-  --color-secondary: #4F46E5;    /* Electric Blue - Innovation, Reliability */
-  --color-accent: #10B981;       /* Fresh Green - Vitality, Nature, Health */
+  /* Primary Brand Colors - Cyan/Green Theme */
+  --color-primary: #00e5ff;      /* Electric Cyan - Energy, Trust, Premium */
+  --color-secondary: #00ff88;    /* Neon Green - Growth, Vitality, Success */
+  --color-accent: #ff3333;       /* Bold Red - Power, Passion, Urgency */
 
   /* Neutral Colors */
   --color-background: #000000;   /* Pure Black */
@@ -18,10 +18,10 @@
   --color-text-subtle: #999999;  /* Subtle Text */
 
   /* Semantic Colors */
-  --color-success: var(--color-accent);
-  --color-info: var(--color-secondary);
+  --color-success: var(--color-secondary);
+  --color-info: var(--color-primary);
   --color-warning: #f59e0b;
-  --color-error: #ef4444;
+  --color-error: #ff4444;
 
   /* ===== GRADIENTS ===== */
 
@@ -29,15 +29,15 @@
   --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
 
   /* Accent Gradient - Secondary Elements */
-  --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
 
   /* Glass Effect Gradients */
   --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   --gradient-glass-hover: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
 
   /* Background Gradients */
-  --gradient-bg-subtle: linear-gradient(135deg, rgba(0, 212, 170, 0.03) 0%, rgba(79, 70, 229, 0.02) 100%);
-  --gradient-bg-accent: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(0, 212, 170, 0.03) 100%);
+  --gradient-bg-subtle: linear-gradient(135deg, rgba(0, 229, 255, 0.03) 0%, rgba(0, 255, 136, 0.02) 100%);
+  --gradient-bg-accent: linear-gradient(135deg, rgba(0, 255, 136, 0.05) 0%, rgba(0, 229, 255, 0.03) 100%);
 
   /* ===== SHADOWS & GLOW EFFECTS ===== */
 
@@ -48,21 +48,21 @@
   --shadow-elev-4: 0 16px 32px rgba(0, 0, 0, 0.6);
 
   /* Card Shadows */
-  --shadow-card: 0 0 40px rgba(0, 212, 170, 0.2);
-  --shadow-card-hover: 0 0 60px rgba(0, 212, 170, 0.3), 0 20px 40px rgba(0, 0, 0, 0.4);
-  --shadow-card-active: 0 0 80px rgba(0, 212, 170, 0.4), 0 30px 60px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 0 40px rgba(0, 229, 255, 0.2);
+  --shadow-card-hover: 0 0 60px rgba(0, 229, 255, 0.3), 0 20px 40px rgba(0, 0, 0, 0.4);
+  --shadow-card-active: 0 0 80px rgba(0, 229, 255, 0.4), 0 30px 60px rgba(0, 0, 0, 0.5);
 
   /* Component Shadows */
-  --shadow-button: 0 4px 14px rgba(0, 212, 170, 0.4);
-  --shadow-button-hover: 0 6px 20px rgba(0, 212, 170, 0.5);
-  --shadow-social: 0 4px 14px rgba(0, 212, 170, 0.3);
+  --shadow-button: 0 4px 14px rgba(0, 229, 255, 0.4);
+  --shadow-button-hover: 0 6px 20px rgba(0, 229, 255, 0.5);
+  --shadow-social: 0 4px 14px rgba(0, 229, 255, 0.3);
   --shadow-logo: 0 10px 20px rgba(0, 0, 0, 0.2);
 
   /* Glow Effects */
-  --glow-primary: 0 0 20px rgba(0, 212, 170, 0.6);
-  --glow-secondary: 0 0 20px rgba(79, 70, 229, 0.6);
-  --glow-accent: 0 0 20px rgba(16, 185, 129, 0.6);
-  --glow-combined: 0 0 20px rgba(0, 212, 170, 0.4), 0 0 40px rgba(79, 70, 229, 0.3);
+  --glow-primary: 0 0 20px rgba(0, 229, 255, 0.6);
+  --glow-secondary: 0 0 20px rgba(0, 255, 136, 0.6);
+  --glow-accent: 0 0 20px rgba(255, 51, 51, 0.6);
+  --glow-combined: 0 0 20px rgba(0, 229, 255, 0.4), 0 0 40px rgba(0, 255, 136, 0.3);
 
   /* ===== TYPOGRAPHY ===== */
 
@@ -246,9 +246,9 @@
 --button-primary-shadow: var(--shadow-button);
 --button-primary-hover-shadow: var(--shadow-button-hover);
 
---button-secondary-bg: rgba(16, 185, 129, 0.1);
---button-secondary-border: 2px solid var(--color-accent);
---button-secondary-hover-bg: var(--color-accent);
+--button-secondary-bg: rgba(0, 255, 136, 0.1);
+--button-secondary-border: 2px solid var(--color-secondary);
+--button-secondary-hover-bg: var(--color-secondary);
 --button-secondary-hover-color: var(--color-background);
 
 --button-ghost-bg: transparent;
@@ -260,12 +260,12 @@
 --input-bg: rgba(255, 255, 255, 0.05);
 --input-border: 2px solid rgba(255, 255, 255, 0.2);
 --input-border-focus: 2px solid var(--color-primary);
---input-shadow-focus: 0 0 0 3px rgba(0, 212, 170, 0.2);
+--input-shadow-focus: 0 0 0 3px rgba(0, 229, 255, 0.2);
 
 /* Card Variants */
 --card-bg: var(--color-surface);
---card-border: 1px solid rgba(0, 212, 170, 0.2);
---card-border-hover: 1px solid rgba(79, 70, 229, 0.4);
+--card-border: 1px solid rgba(0, 229, 255, 0.2);
+--card-border-hover: 1px solid rgba(0, 255, 136, 0.4);
 --card-shadow: var(--shadow-card);
 --card-shadow-hover: var(--shadow-card-hover);
 
@@ -284,9 +284,9 @@
   --color-text-muted: #e0e0e0;
   --color-text-subtle: #c0c0c0;
 
-  --glow-primary: 0 0 30px rgba(0, 212, 170, 0.8);
-  --glow-secondary: 0 0 30px rgba(79, 70, 229, 0.8);
-  --glow-accent: 0 0 30px rgba(16, 185, 129, 0.8);
+  --glow-primary: 0 0 30px rgba(0, 229, 255, 0.8);
+  --glow-secondary: 0 0 30px rgba(0, 255, 136, 0.8);
+  --glow-accent: 0 0 30px rgba(255, 51, 51, 0.8);
 }
 
 /* ===== REDUCED MOTION ===== */

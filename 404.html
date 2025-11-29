@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Godspeed Bulldogs</title>
+    <meta name="description" content="The page you're looking for could not be found. Return to Godspeed Bulldogs homepage.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/android-chrome-512x512.png">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+    <meta name="theme-color" content="#00e5ff">
+
+    <!-- SEO and Social Meta Tags -->
+    <meta property="og:title" content="404 - Page Not Found | Godspeed Bulldogs">
+    <meta property="og:description" content="The page you're looking for could not be found. Return to Godspeed Bulldogs homepage.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Godspeed Bulldogs">
+    <meta property="og:image" content="https://www.godspeedbulldogs.com/assets/images/apple-touch-icon.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="404 - Page Not Found | Godspeed Bulldogs">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/brand-colors.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #000 0%, #001a1a 100%);
+            z-index: 0;
+        }
+
+        .error-background::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0,229,255,0.15) 0%, transparent 70%);
+            top: -300px;
+            left: -300px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .error-background::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0,255,136,0.12) 0%, transparent 70%);
+            bottom: -250px;
+            right: -250px;
+            animation: float 25s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(100px, 100px); }
+        }
+
+        .error-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #00e5ff 0%, #00ff88 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 40px rgba(0,229,255,0.6));
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 40px rgba(0,229,255,0.6)); }
+            50% { filter: drop-shadow(0 0 60px rgba(0,229,255,0.8)); }
+        }
+
+        .error-title {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 25px rgba(0,229,255,0.6);
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: rgba(255,255,255,0.8);
+            text-shadow: 0 0 15px rgba(0,229,255,0.4);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00e5ff 0%, #00ff88 100%);
+            color: #000;
+            box-shadow: 0 6px 25px rgba(0,229,255,0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(0,229,255,0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid rgba(0,229,255,0.4);
+            color: #fff;
+            text-shadow: 0 0 15px rgba(0,229,255,0.6);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0,229,255,0.1);
+            border-color: #00e5ff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,229,255,0.3);
+        }
+
+        .helpful-links {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(0,229,255,0.2);
+        }
+
+        .helpful-links h3 {
+            font-size: 1.2rem;
+            color: #00e5ff;
+            text-shadow: 0 0 15px rgba(0,229,255,0.6);
+            margin-bottom: 20px;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .link-item {
+            display: block;
+            padding: 12px;
+            background: rgba(0,229,255,0.05);
+            border: 1px solid rgba(0,229,255,0.2);
+            border-radius: 8px;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .link-item:hover {
+            background: rgba(0,229,255,0.1);
+            border-color: #00e5ff;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 639px) {
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="error-container" role="main">
+        <div class="error-background" aria-hidden="true"></div>
+
+        <div class="error-content">
+            <div class="error-code">404</div>
+
+            <h1 class="error-title">Page Not Found</h1>
+
+            <p class="error-message">
+                Oops! The page you're looking for seems to have wandered off. Don't worry – even our bulldogs get lost sometimes. Let's get you back on track.
+            </p>
+
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-primary" aria-label="Return to homepage">Go Home</a>
+                <a href="available-puppies.html" class="btn btn-secondary" aria-label="View available English Bulldog puppies">View Available Puppies</a>
+            </div>
+
+            <div class="helpful-links">
+                <h3>Popular Pages</h3>
+                <div class="links-grid">
+                    <a href="index.html" class="link-item">Home</a>
+                    <a href="program.html" class="link-item">Our Program</a>
+                    <a href="bloodline.html" class="link-item">The Bloodline</a>
+                    <a href="gallery.html" class="link-item">Gallery</a>
+                    <a href="available-puppies.html" class="link-item">Available Puppies</a>
+                    <a href="inquiry.html" class="link-item">Submit Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

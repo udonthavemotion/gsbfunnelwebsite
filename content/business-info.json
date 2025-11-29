@@ -2,9 +2,9 @@
   "businessName": "Godspeed Bulldogs",
   "businessNameShort": "Godspeed",
   "tagline": "Premium English Bulldog Breeding",
-  "phone": "(512) 555-0100",
-  "phoneFormatted": "+1-512-555-0100",
-  "email": "info@godspeedbulldogs.com",
+  "phone": "(985) 217-0368",
+  "phoneFormatted": "+1-985-217-0368",
+  "email": "godspeedbulldogs@gmail.com",
   "address": {
     "street": "",
     "city": "Houma",
@@ -32,6 +32,6 @@
     "akcRegistered": true,
     "healthGuarantee": true,
     "puppyPriceRange": "$6,500 - $8,500",
-    "nextLitter": "Spring 2026"
+    "nextLitter": "Winter 2026"
   }
 }

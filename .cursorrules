@@ -13,9 +13,9 @@ You are working on the Godspeed Bulldogs website - a premium English Bulldog bre
 - First litter success: Sold to professional athletes (Jalen Reed, Maason)
 
 ## Brand Guidelines - CRITICAL
-- **Color Palette**: Black (#000), White (#FFF), Red (#FF0000)
-- **Visual Style**: Luxury-streetwear fusion aesthetic
-- **MANDATORY**: ALL white text MUST have red glow effect: `text-shadow: 0 0 20px rgba(255,0,0,0.6)` or similar
+- **Color Palette**: Black (#000), White (#FFF), Cyan (#00e5ff), Green (#00ff88)
+- **Visual Style**: Luxury-streetwear fusion aesthetic with cyan/green accents
+- **MANDATORY**: ALL white text MUST have cyan glow effect: `text-shadow: 0 0 20px rgba(0,229,255,0.6)` or similar
 - **Typography**: Poppins font family (weights: 300, 400, 500, 600, 700, 800)
 - **Logo Paths**: `/assets/images/logo/` (with fallback to `/assets/images/original logo/`)
 
@@ -32,7 +32,7 @@ You are working on the Godspeed Bulldogs website - a premium English Bulldog bre
 - **Images**: Use lazy loading (`loading="lazy"`), responsive srcset where appropriate
 - **Touch Targets**: Minimum 44x44px for mobile
 - **No Emojis**: Unless explicitly requested by user
-- **Red Glow**: Apply to ALL white text elements (headings, body text, links, buttons, footer)
+- **Cyan Glow**: Apply to ALL white text elements (headings, body text, links, buttons, footer)
 - **Code Style**: Clean, semantic HTML; organized CSS; vanilla JavaScript
 
 ## File Structure
@@ -73,14 +73,14 @@ You are working on the Godspeed Bulldogs website - a premium English Bulldog bre
 2. **Reserve Deposits**: Secondary goal - $1,000 deposit collection (handled in GHL, not website)
 3. **Mobile Optimization**: 100% mobile testing required for all changes
 4. **Performance**: Ship minimal JS, lazy-load images, optimize assets
-5. **Brand Consistency**: Red glow on white text, black/white/red color scheme throughout
+5. **Brand Consistency**: Cyan glow on white text, black/white/cyan/green color scheme throughout
 
 ## Code Patterns
 - **Hero Images**: Use opacity transitions for carousel (smooth, performant)
 - **Forms**: Large touch targets, clear labels, proper validation
-- **Buttons**: Red gradient background (#FF0000 to #CC0000), hover effects with glow
-- **Sections**: Dark backgrounds with subtle red accents
-- **Text**: White text with red glow shadow for visibility and brand consistency
+- **Buttons**: Cyan/Green gradient background (#00e5ff to #00ff88), hover effects with glow
+- **Sections**: Dark backgrounds with subtle cyan/green accents
+- **Text**: White text with cyan glow shadow for visibility and brand consistency
 
 ## Knowledge Base Reference
 - Master guide: `/knowledge base/godspeed_bulldogs_master_guide.md`

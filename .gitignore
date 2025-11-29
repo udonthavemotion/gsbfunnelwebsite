@@ -14,12 +14,23 @@ Thumbs.db
 *.swp
 *.swo
 *~
+nul
 
 # IDE Files
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
+.claude/
+.claude.zip
+
+# Source media files (not for deployment)
+DOGS/
+*.pdf
+
+# Archive files
+*.zip
+deploy/
 
 # Logs
 *.log
@@ -43,3 +54,9 @@ node_modules/
 # Build outputs (if any)
 dist/
 build/
+
+# Large design files
+*.png
+!assets/images/**/*.png
+*.ico
+!assets/images/**/*.ico

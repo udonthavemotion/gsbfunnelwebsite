@@ -1,0 +1,59 @@
+[
+  {
+    "id": "puppy-1",
+    "title": "Bella",
+    "subtitle": "Fawn • Female",
+    "price": "$7,500",
+    "status": "Available",
+    "image": "/assets/images/bulldogs/gallery/placeholder-1.jpg",
+    "link": "/available-puppies.html#bella"
+  },
+  {
+    "id": "puppy-2",
+    "title": "Duke",
+    "subtitle": "Brindle • Male",
+    "price": "$8,000",
+    "status": "Reserved",
+    "image": "/assets/images/bulldogs/gallery/placeholder-2.jpg",
+    "link": "/available-puppies.html#duke"
+  },
+  {
+    "id": "puppy-3",
+    "title": "Luna",
+    "subtitle": "White • Female",
+    "price": "$7,500",
+    "status": "Available",
+    "image": "/assets/images/bulldogs/gallery/placeholder-3.jpg",
+    "link": "/available-puppies.html#luna"
+  },
+  {
+    "id": "puppy-4",
+    "title": "Max",
+    "subtitle": "Red Fawn • Male",
+    "price": "$8,500",
+    "status": "Coming Soon",
+    "image": "/assets/images/bulldogs/gallery/placeholder-4.jpg",
+    "link": "/available-puppies.html#max"
+  },
+  {
+    "id": "puppy-5",
+    "title": "Daisy",
+    "subtitle": "Fawn & White • Female",
+    "price": "$7,500",
+    "status": "Available",
+    "image": "/assets/images/bulldogs/gallery/placeholder-5.jpg",
+    "link": "/available-puppies.html#daisy"
+  },
+  {
+    "id": "puppy-6",
+    "title": "Rocky",
+    "subtitle": "Brindle • Male",
+    "price": "$8,000",
+    "status": "Coming Soon",
+    "image": "/assets/images/bulldogs/gallery/placeholder-6.jpg",
+    "link": "/available-puppies.html#rocky"
+  }
+]
+
+
+

@@ -137,7 +137,7 @@
         2px 2px 4px rgba(0, 0, 0, 0.9),
         -1px 1px 2px rgba(0, 0, 0, 0.7),
         1px -1px 2px rgba(0, 0, 0, 0.7),
-        0 0 8px rgba(255, 0, 0, 0.3);
+        0 0 8px rgba(0, 229, 255, 0.3);
     text-align: left;
     margin-left: 0;
     padding-left: 0;
@@ -149,7 +149,7 @@
 }
 
 .nav-logo:hover .logo-text {
-    text-shadow: 
+    text-shadow:
         -1px -1px 0px rgba(0, 0, 0, 0.9),
         1px 1px 0px rgba(0, 0, 0, 0.9),
         0px 0px 3px rgba(0, 0, 0, 0.8),
@@ -157,8 +157,8 @@
         2px 2px 4px rgba(0, 0, 0, 0.9),
         -1px 1px 2px rgba(0, 0, 0, 0.7),
         1px -1px 2px rgba(0, 0, 0, 0.7),
-        0 0 12px rgba(255, 0, 0, 0.5),
-        0 0 20px rgba(255, 0, 0, 0.3);
+        0 0 12px rgba(0, 229, 255, 0.5),
+        0 0 20px rgba(0, 229, 255, 0.3);
     transform: translateX(2px);
     filter: contrast(1.15) brightness(1.0);
 }
@@ -172,12 +172,12 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 2px;
-    text-shadow: 
+    text-shadow:
         -1px -1px 0px rgba(0, 0, 0, 0.9),
         1px 1px 0px rgba(0, 0, 0, 0.9),
         0px 0px 2px rgba(0, 0, 0, 0.8),
         1px 1px 2px rgba(0, 0, 0, 0.9),
-        0 0 6px rgba(255, 0, 0, 0.3);
+        0 0 6px rgba(0, 229, 255, 0.3);
     filter: contrast(1.1) brightness(0.95);
 }
 
@@ -222,8 +222,8 @@
 }
 
 .nav-link.active {
-    color: #FF0000;
-    text-shadow: 0 0 20px rgba(255,255,255,0.8);
+    color: #00e5ff;
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
 }
 
 .nav-link::after {
@@ -233,7 +233,7 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #FF0000, #CC0000);
+    background: linear-gradient(90deg, #00e5ff, #00ff88);
     transition: width 0.3s ease, left 0.3s ease;
     border-radius: 2px;
 }
@@ -245,7 +245,7 @@
 }
 
 .nav-link.active::after {
-    background: #FF0000;
+    background: #00e5ff;
 }
 
 /* ============================================
@@ -274,7 +274,7 @@
 }
 
 .nav-cart-link:hover .cart-icon {
-    color: #FF6B35;
+    color: #00e5ff;
     transform: translateY(-1px);
 }
 
@@ -289,12 +289,12 @@
     height: 16px;
     padding: 0 4px;
     border-radius: 50%;
-    background: #FF6B35;
-    color: #fff;
+    background: #00e5ff;
+    color: #000;
     font-size: 10px;
     font-weight: 700;
     line-height: 1;
-    box-shadow: 0 2px 6px rgba(255, 107, 53, 0.4);
+    box-shadow: 0 2px 6px rgba(0, 229, 255, 0.4);
 }
 
 .nav-cart-count[hidden] {
@@ -349,18 +349,18 @@
 }
 
 .nav-cta .btn-primary {
-    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+    background: linear-gradient(135deg, #00e5ff 0%, #00ff88 100%);
     border: none;
-    color: #fff;
-    box-shadow: 0 2px 6px rgba(255, 0, 0, 0.4);
-    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 229, 255, 0.4);
+    text-shadow: none;
 }
 
 .nav-cta .btn-primary:hover {
-    background: linear-gradient(135deg, #CC0000 0%, #FF0000 100%);
-    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.5);
+    background: linear-gradient(135deg, #00ff88 0%, #00e5ff 100%);
+    box-shadow: 0 3px 10px rgba(0, 255, 136, 0.5);
     transform: translateY(-1px);
-    text-shadow: 0 0 15px rgba(255,255,255,0.8);
+    text-shadow: none;
 }
 
 /* ============================================
@@ -387,7 +387,7 @@
 }
 
 .mobile-menu-toggle:hover span {
-    background: #FF6B35;
+    background: #00e5ff;
 }
 
 .mobile-menu-toggle.active span:nth-child(1) {
@@ -502,7 +502,7 @@
         2px 2px 4px rgba(0, 0, 0, 0.9),
         -1px 1px 2px rgba(0, 0, 0, 0.7),
         1px -1px 2px rgba(0, 0, 0, 0.7),
-        0 0 8px rgba(255, 0, 0, 0.3);
+        0 0 8px rgba(0, 229, 255, 0.3);
     filter: contrast(1.1) brightness(0.95);
 }
 
@@ -541,7 +541,7 @@
 
 .mobile-nav-menu .nav-link:hover,
 .mobile-nav-menu .nav-link.active {
-    color: #FF0000;
+    color: #00e5ff;
     transform: translateX(6px);
     text-shadow: 0 0 20px rgba(255,255,255,0.8);
 }
@@ -578,10 +578,10 @@
 }
 
 .mobile-nav-cta .btn-primary {
-    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+    background: linear-gradient(135deg, #00e5ff 0%, #00ff88 100%);
     border: none;
     color: #fff;
-    box-shadow: 0 3px 12px rgba(255, 0, 0, 0.4);
+    box-shadow: 0 3px 12px rgba(0, 229, 255, 0.4);
     text-shadow: 0 0 10px rgba(255,255,255,0.6);
 }
 
@@ -737,7 +737,7 @@
 .nav-link:focus-visible,
 .btn:focus-visible,
 .mobile-menu-toggle:focus-visible {
-    outline: 2px solid #FF6B35;
+    outline: 2px solid #00e5ff;
     outline-offset: 3px;
     border-radius: 2px;
 }

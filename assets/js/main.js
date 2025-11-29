@@ -490,10 +490,10 @@ function addScrollToTop() {
     scrollBtn.style.cssText = `
         position: fixed;
         bottom: 20px;
-        right: 20px;
+        left: 20px;
         width: 50px;
         height: 50px;
-        background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+        background: linear-gradient(135deg, #00e5ff 0%, #00ff88 100%);
         color: white;
         border: 2px solid rgba(255, 255, 255, 0.2);
         border-radius: 50%;
@@ -504,22 +504,22 @@ function addScrollToTop() {
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 1000;
-        box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4), 0 0 30px rgba(255, 0, 0, 0.3);
+        box-shadow: 0 4px 20px rgba(0, 229, 255, 0.4), 0 0 30px rgba(0, 229, 255, 0.3);
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     `;
-    
+
     // Add hover effect
     scrollBtn.addEventListener('mouseenter', function() {
-        this.style.background = 'linear-gradient(135deg, #CC0000 0%, #AA0000 100%)';
+        this.style.background = 'linear-gradient(135deg, #00ff88 0%, #00e5ff 100%)';
         this.style.transform = 'translateY(-3px) scale(1.1)';
-        this.style.boxShadow = '0 6px 30px rgba(255, 0, 0, 0.6), 0 0 40px rgba(255, 0, 0, 0.4)';
+        this.style.boxShadow = '0 6px 30px rgba(0, 229, 255, 0.6), 0 0 40px rgba(0, 229, 255, 0.4)';
         this.style.borderColor = 'rgba(255, 255, 255, 0.4)';
     });
-    
+
     scrollBtn.addEventListener('mouseleave', function() {
-        this.style.background = 'linear-gradient(135deg, #FF0000 0%, #CC0000 100%)';
+        this.style.background = 'linear-gradient(135deg, #00e5ff 0%, #00ff88 100%)';
         this.style.transform = 'translateY(0) scale(1)';
-        this.style.boxShadow = '0 4px 20px rgba(255, 0, 0, 0.4), 0 0 30px rgba(255, 0, 0, 0.3)';
+        this.style.boxShadow = '0 4px 20px rgba(0, 229, 255, 0.4), 0 0 30px rgba(0, 229, 255, 0.3)';
         this.style.borderColor = 'rgba(255, 255, 255, 0.2)';
     });
     

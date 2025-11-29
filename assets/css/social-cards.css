@@ -1,0 +1,282 @@
+/* ============================================
+   SOCIAL CARDS COMPONENT - PREMIUM EDITION
+   Modern glassmorphism design with cyan glow aesthetic
+   Optimized for 2025 marketing engagement
+   ============================================ */
+
+.social-cards-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.social-cards-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+/* Card Base Styles - Transparent Dark Mode */
+.social-card {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle glow effect on card */
+.social-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 229, 255, 0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-card:hover::before {
+  opacity: 1;
+}
+
+/* Accessibility: Focus States with Glow */
+.social-card:focus {
+  outline: 2px solid #00e5ff;
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 3px rgba(0, 229, 255, 0.2),
+    0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+.social-card:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.social-card:focus-visible {
+  outline: 2px solid #00e5ff;
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 3px rgba(0, 229, 255, 0.2),
+    0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+/* Individual Card Border Radiuses - Premium Curves */
+.social-card--instagram {
+  border-radius: 50px 8px 8px 8px;
+}
+
+.social-card--twitter {
+  border-radius: 8px 50px 8px 8px;
+}
+
+.social-card--facebook {
+  border-radius: 8px 8px 8px 50px;
+}
+
+.social-card--discord {
+  border-radius: 8px 8px 50px 8px;
+}
+
+/* SVG Icon Positioning - Premium Colors */
+.social-card svg {
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  position: relative;
+  z-index: 1;
+}
+
+.social-card--instagram svg {
+  margin-top: 0.8em;
+  margin-left: 0.65em;
+  fill: #E1306C;
+}
+
+.social-card--twitter svg {
+  margin-top: 0.8em;
+  margin-left: -0.5em;
+  fill: #1DA1F2;
+}
+
+.social-card--facebook svg {
+  margin-top: -0.35em;
+  margin-left: 0.65em;
+  fill: #1877F2;
+}
+
+.social-card--discord svg {
+  margin-top: -0.5em;
+  margin-left: -0.65em;
+  fill: #5865F2;
+}
+
+/* Subtle Hover Effects */
+.social-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 229, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.social-card--instagram:hover {
+  cursor: pointer;
+  background: rgba(225, 48, 108, 0.1);
+  box-shadow: 0 3px 8px rgba(225, 48, 108, 0.2);
+}
+
+.social-card--instagram:hover svg {
+  fill: #E1306C;
+  filter: drop-shadow(0 0 4px rgba(225, 48, 108, 0.4));
+  transform: scale(1.05);
+}
+
+.social-card--twitter:hover {
+  cursor: pointer;
+  background: rgba(29, 161, 242, 0.1);
+  box-shadow: 0 3px 8px rgba(29, 161, 242, 0.2);
+}
+
+.social-card--twitter:hover svg {
+  fill: #1DA1F2;
+  filter: drop-shadow(0 0 4px rgba(29, 161, 242, 0.4));
+  transform: scale(1.05);
+}
+
+.social-card--facebook:hover {
+  cursor: pointer;
+  background: rgba(24, 119, 242, 0.1);
+  box-shadow: 0 3px 8px rgba(24, 119, 242, 0.2);
+}
+
+.social-card--facebook:hover svg {
+  fill: #1877F2;
+  filter: drop-shadow(0 0 4px rgba(24, 119, 242, 0.4));
+  transform: scale(1.05);
+}
+
+.social-card--discord:hover {
+  cursor: pointer;
+  background: rgba(88, 101, 242, 0.1);
+  box-shadow: 0 3px 8px rgba(88, 101, 242, 0.2);
+}
+
+.social-card--discord:hover svg {
+  fill: #5865F2;
+  filter: drop-shadow(0 0 4px rgba(88, 101, 242, 0.4));
+  transform: scale(1.05);
+}
+
+/* Responsive Design - Mobile Optimized */
+@media (max-width: 768px) {
+  .social-card {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-card svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social-cards-container {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-card {
+    width: 42px;
+    height: 42px;
+  }
+
+  .social-card svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .social-cards-row {
+    gap: 0.4em;
+  }
+
+  .social-cards-container {
+    gap: 0.4em;
+    padding: 5px;
+  }
+}
+
+/* ============================================
+   STRATEGIC PLACEMENT VARIANTS
+   ============================================ */
+
+/* Footer Placement - Subtle & Discoverable */
+.footer-section .social-cards-container {
+  margin-top: 20px;
+}
+
+/* Inline Placement - Content Integration */
+.social-cards-inline {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+/* Center Placement - Hero/CTA Areas */
+.social-cards-center {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+/* Floating Variant - Sticky Social Bar (Optional) */
+.social-cards-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  animation: fadeInSlide 0.5s ease-out;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-cards-floating .social-cards-container {
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 229, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .social-cards-floating {
+    bottom: 15px;
+    right: 15px;
+  }
+}

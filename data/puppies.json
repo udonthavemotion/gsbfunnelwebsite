@@ -1,0 +1,263 @@
+{
+  "puppies": [
+    {
+      "id": "gb-2026-001",
+      "name": "Atlas",
+      "color": "Fawn",
+      "sex": "Male",
+      "age": "8 weeks",
+      "status": "available",
+      "price": 7500,
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested", "Full Vaccinations"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-1.jpg",
+        "assets/images/bulldogs/gallery/gallery-2.jpg",
+        "assets/images/bulldogs/gallery/gallery-3.jpg"
+      ],
+      "description": "Atlas is a stunning fawn male with an incredible temperament. He's confident, playful, and loves everyone he meets. From champion bloodlines with excellent health testing on both parents.",
+      "parentInfo": {
+        "mother": {
+          "name": "Lady Godiva",
+          "color": "Fawn",
+          "weight": "48 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
+        },
+        "father": {
+          "name": "Zeus",
+          "color": "Brindle",
+          "weight": "55 lbs",
+          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
+        }
+      }
+    },
+    {
+      "id": "gb-2026-002",
+      "name": "Bella",
+      "color": "Brindle",
+      "sex": "Female",
+      "age": "8 weeks",
+      "status": "sold",
+      "price": 8500,
+      "placedDate": "December 2024",
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested", "Full Vaccinations"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-4.jpg",
+        "assets/images/bulldogs/gallery/gallery-5.jpg",
+        "assets/images/bulldogs/gallery/gallery-6.jpg"
+      ],
+      "description": "Bella was a gorgeous brindle female with perfect conformation and a sweet, gentle personality. She's now loving life with her new family - a professional athlete household in Texas. See our quality!",
+      "parentInfo": {
+        "mother": {
+          "name": "Lady Godiva",
+          "color": "Fawn",
+          "weight": "48 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
+        },
+        "father": {
+          "name": "Zeus",
+          "color": "Brindle",
+          "weight": "55 lbs",
+          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
+        }
+      }
+    },
+    {
+      "id": "gb-2026-003",
+      "name": "Duke",
+      "color": "White",
+      "sex": "Male",
+      "age": "7 weeks",
+      "status": "available",
+      "price": 8000,
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested", "Full Vaccinations"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-7.jpg",
+        "assets/images/bulldogs/gallery/gallery-8.jpg",
+        "assets/images/bulldogs/gallery/gallery-9.jpg"
+      ],
+      "description": "Duke is a stunning pure white male with exceptional structure. He's energetic, social, and has that classic bulldog charm. Perfect for families who want a show-quality companion.",
+      "parentInfo": {
+        "mother": {
+          "name": "Duchess",
+          "color": "White",
+          "weight": "45 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-10.jpg"
+        },
+        "father": {
+          "name": "King",
+          "color": "White",
+          "weight": "52 lbs",
+          "certifications": ["AKC Grand Champion", "OFA Hip Excellent"],
+          "image": "assets/images/bulldogs/gallery/gallery-11.jpg"
+        }
+      }
+    },
+    {
+      "id": "gb-2026-004",
+      "name": "Lola",
+      "color": "Red",
+      "sex": "Female",
+      "age": "8 weeks",
+      "status": "available",
+      "price": 8500,
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested", "Full Vaccinations"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-12.jpg",
+        "assets/images/bulldogs/gallery/gallery-13.jpg",
+        "assets/images/bulldogs/gallery/gallery-1.jpg"
+      ],
+      "description": "Lola is a rare red female with striking coloration and an amazing personality. She's intelligent, playful, and bonds quickly. From champion bloodlines with impeccable health records.",
+      "parentInfo": {
+        "mother": {
+          "name": "Ruby",
+          "color": "Red",
+          "weight": "46 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-2.jpg"
+        },
+        "father": {
+          "name": "Titan",
+          "color": "Red Brindle",
+          "weight": "54 lbs",
+          "certifications": ["AKC Champion", "OFA Hip Good"],
+          "image": "assets/images/bulldogs/gallery/gallery-3.jpg"
+        }
+      }
+    },
+    {
+      "id": "gb-2026-005",
+      "name": "Rocky",
+      "color": "Brindle",
+      "sex": "Male",
+      "age": "9 weeks",
+      "status": "available",
+      "price": 7000,
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested", "Full Vaccinations"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-14.jpg",
+        "assets/images/bulldogs/gallery/gallery-15.jpg",
+        "assets/images/bulldogs/gallery/gallery-4.jpg"
+      ],
+      "description": "Rocky is a handsome brindle male with a stocky build and friendly demeanor. He loves to play and is great with other dogs. Perfect family companion with champion genetics.",
+      "parentInfo": {
+        "mother": {
+          "name": "Lady Godiva",
+          "color": "Fawn",
+          "weight": "48 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
+        },
+        "father": {
+          "name": "Zeus",
+          "color": "Brindle",
+          "weight": "55 lbs",
+          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
+        }
+      }
+    },
+    {
+      "id": "gb-2026-006",
+      "name": "Chloe",
+      "color": "Fawn",
+      "sex": "Female",
+      "age": "7 weeks",
+      "status": "sold",
+      "price": 8200,
+      "placedDate": "November 2024",
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested", "Full Vaccinations"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-3.jpg",
+        "assets/images/bulldogs/gallery/gallery-4.jpg",
+        "assets/images/bulldogs/gallery/gallery-5.jpg"
+      ],
+      "description": "Chloe was a beautiful fawn female with perfect markings and a sweet personality. Now thriving with her loving forever family in Louisiana. A perfect example of our breeding quality!",
+      "parentInfo": {
+        "mother": {
+          "name": "Lady Godiva",
+          "color": "Fawn",
+          "weight": "48 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
+        },
+        "father": {
+          "name": "Zeus",
+          "color": "Brindle",
+          "weight": "55 lbs",
+          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
+        }
+      }
+    },
+    {
+      "id": "gb-2026-007",
+      "name": "Max",
+      "color": "Combination",
+      "sex": "Male",
+      "age": "Expected January 2026",
+      "status": "coming-soon",
+      "price": 7500,
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-9.jpg",
+        "assets/images/bulldogs/gallery/gallery-10.jpg",
+        "assets/images/bulldogs/gallery/gallery-11.jpg"
+      ],
+      "description": "Max is from our upcoming Winter 2026 litter. He'll be a stunning tri-color male with unique markings. From champion parents with excellent health testing. Join our waitlist for priority selection!",
+      "parentInfo": {
+        "mother": {
+          "name": "Duchess",
+          "color": "White",
+          "weight": "45 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-10.jpg"
+        },
+        "father": {
+          "name": "Titan",
+          "color": "Red Brindle",
+          "weight": "54 lbs",
+          "certifications": ["AKC Champion", "OFA Hip Good"],
+          "image": "assets/images/bulldogs/gallery/gallery-3.jpg"
+        }
+      }
+    },
+    {
+      "id": "gb-2026-008",
+      "name": "Stella",
+      "color": "Red",
+      "sex": "Female",
+      "age": "8 weeks",
+      "status": "sold",
+      "price": 8400,
+      "placedDate": "December 2024",
+      "healthTesting": ["OFA Hip Certified", "Heart Clear", "Patella Normal", "DNA Tested", "Full Vaccinations"],
+      "images": [
+        "assets/images/bulldogs/gallery/gallery-6.jpg",
+        "assets/images/bulldogs/gallery/gallery-7.jpg",
+        "assets/images/bulldogs/gallery/gallery-8.jpg"
+      ],
+      "description": "Stella was a gorgeous red female with exceptional conformation. She found her perfect match with a family in Florida. This is the quality you can expect from our champion bloodlines!",
+      "parentInfo": {
+        "mother": {
+          "name": "Ruby",
+          "color": "Red",
+          "weight": "46 lbs",
+          "certifications": ["AKC Champion", "OFA Certified"],
+          "image": "assets/images/bulldogs/gallery/gallery-2.jpg"
+        },
+        "father": {
+          "name": "Titan",
+          "color": "Red Brindle",
+          "weight": "54 lbs",
+          "certifications": ["AKC Champion", "OFA Hip Good"],
+          "image": "assets/images/bulldogs/gallery/gallery-3.jpg"
+        }
+      }
+    }
+  ]
+}

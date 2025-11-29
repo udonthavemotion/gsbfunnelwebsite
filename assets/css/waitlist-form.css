@@ -1,0 +1,705 @@
+/**
+ * GODSPEED BULLDOGS - PREMIUM WAITLIST PAGE DESIGN
+ * Beautiful, minimalistic design with cyan/green brand colors
+ * Designed to enhance the GoHighLevel form integration
+ */
+
+/* ============================================
+   HERO SECTION - PREMIUM DESIGN
+   ============================================ */
+
+.waitlist-hero-premium {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 80px;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Animated Gradient Background */
+.hero-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        ellipse at top,
+        rgba(0, 229, 255, 0.15) 0%,
+        rgba(0, 255, 136, 0.08) 40%,
+        rgba(0, 0, 0, 0.95) 80%
+    );
+    z-index: 0;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+/* Floating Orbs Background Animation */
+.floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    animation: float 20s ease-in-out infinite;
+}
+
+.orb-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.4), transparent);
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.4), transparent);
+    top: 60%;
+    right: 15%;
+    animation-delay: -7s;
+}
+
+.orb-3 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.3), transparent);
+    bottom: 20%;
+    left: 50%;
+    animation-delay: -14s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+}
+
+/* Hero Content */
+.waitlist-hero-premium .container {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Premium Badge */
+.waitlist-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(0, 229, 255, 0.1);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 50px;
+    margin-bottom: 30px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.waitlist-badge svg {
+    stroke: #00e5ff;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.waitlist-badge span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #00e5ff;
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Main Title */
+.waitlist-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #FFF;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.6), 0 0 80px rgba(0, 229, 255, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animated Gradient Text */
+.gradient-text-animated {
+    background: linear-gradient(
+        90deg,
+        #00e5ff 0%,
+        #00ff88 25%,
+        #00e5ff 50%,
+        #00ff88 75%,
+        #00e5ff 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientFlow 4s ease infinite;
+    display: block;
+    margin-top: 10px;
+}
+
+@keyframes gradientFlow {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Subtitle */
+.waitlist-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* Trust Bar */
+.trust-bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.trust-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(0, 229, 255, 0.1);
+    border: 2px solid rgba(0, 229, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.trust-icon svg {
+    stroke: #00e5ff;
+    width: 28px;
+    height: 28px;
+}
+
+.trust-item:hover .trust-icon {
+    background: rgba(0, 229, 255, 0.2);
+    border-color: #00e5ff;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 40px rgba(0, 229, 255, 0.4);
+}
+
+.trust-item span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #FFF;
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 2s ease-out, bounce 2s ease-in-out infinite;
+    animation-delay: 1s, 3s;
+}
+
+.scroll-arrow {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 229, 255, 0.1);
+    border: 2px solid rgba(0, 229, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-arrow svg {
+    stroke: #00e5ff;
+}
+
+.scroll-indicator span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   FORM SECTION - GLASS MORPHISM DESIGN
+   ============================================ */
+
+.waitlist-form-section {
+    position: relative;
+    padding: 100px 20px 120px;
+    background: #000;
+    overflow: hidden;
+}
+
+.waitlist-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(0, 229, 255, 0.05) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+/* Section Header */
+.form-section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.form-section-title {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #FFF;
+    text-shadow: 0 0 40px rgba(0, 229, 255, 0.6);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.form-section-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+/* Form Container with Glass Effect */
+.ghl-form-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 100px;
+}
+
+/* Decorative Glows */
+.form-glow-top,
+.form-glow-bottom {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.form-glow-top {
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.6), transparent);
+    top: -100px;
+    right: -100px;
+}
+
+.form-glow-bottom {
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.6), transparent);
+    bottom: -100px;
+    left: -100px;
+}
+
+/* GoHighLevel Form Wrapper - Glass Morphism */
+.ghl-form-wrapper {
+    position: relative;
+    z-index: 1;
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        0 0 60px rgba(0, 229, 255, 0.1),
+        inset 0 0 60px rgba(0, 229, 255, 0.03);
+    transition: all 0.5s ease;
+}
+
+.ghl-form-wrapper:hover {
+    border-color: rgba(0, 229, 255, 0.4);
+    box-shadow:
+        0 12px 48px rgba(0, 0, 0, 0.6),
+        0 0 80px rgba(0, 229, 255, 0.15),
+        inset 0 0 80px rgba(0, 229, 255, 0.05);
+}
+
+/* ============================================
+   WHAT HAPPENS NEXT SECTION
+   ============================================ */
+
+.next-steps {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    padding: 60px 30px;
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.03) 0%, rgba(0, 255, 136, 0.02) 100%);
+    border-radius: 24px;
+    border: 1px solid rgba(0, 229, 255, 0.1);
+}
+
+.next-steps-title {
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 30px rgba(0, 229, 255, 0.6);
+    margin-bottom: 50px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.step-card {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00e5ff, #00ff88);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.step-card:hover::before {
+    transform: scaleX(1);
+}
+
+.step-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 229, 255, 0.4);
+    box-shadow: 0 12px 40px rgba(0, 229, 255, 0.2);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #00e5ff, #00ff88);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.6);
+}
+
+.step-card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    margin-bottom: 12px;
+}
+
+.step-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+/* ============================================
+   FAQ CALLOUT
+   ============================================ */
+
+.faq-callout {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 40px;
+    background: rgba(0, 229, 255, 0.05);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.faq-callout:hover {
+    background: rgba(0, 229, 255, 0.08);
+    border-color: rgba(0, 229, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 229, 255, 0.2);
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.2), rgba(0, 255, 136, 0.2));
+    border: 2px solid rgba(0, 229, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-icon svg {
+    stroke: #00e5ff;
+}
+
+.faq-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    margin-bottom: 12px;
+}
+
+.faq-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+}
+
+.faq-content a {
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.faq-content a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .waitlist-hero-premium {
+        min-height: 90vh;
+        padding: 100px 20px 60px;
+    }
+
+    .trust-bar {
+        gap: 25px;
+    }
+
+    .trust-item span {
+        font-size: 0.85rem;
+    }
+
+    .scroll-indicator {
+        bottom: 20px;
+    }
+
+    .waitlist-form-section {
+        padding: 60px 20px 80px;
+    }
+
+    .ghl-form-wrapper {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    .next-steps {
+        padding: 40px 20px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .faq-callout {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .faq-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .orb-1,
+    .orb-2,
+    .orb-3 {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .waitlist-badge {
+        padding: 8px 16px;
+    }
+
+    .waitlist-badge span {
+        font-size: 0.8rem;
+    }
+
+    .trust-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .trust-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .step-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .step-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY & PERFORMANCE
+   ============================================ */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for keyboard navigation */
+.trust-item:focus-within .trust-icon,
+.step-card:focus-within,
+.faq-callout:focus-within {
+    outline: 2px solid #00e5ff;
+    outline-offset: 4px;
+}

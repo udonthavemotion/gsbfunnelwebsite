@@ -35,7 +35,7 @@
       ],
       "image": "assets/images/bulldogs/parents-hero.jpg",
       "cta": "Join Waitlist",
-      "ctaLink": "waitlist.html"
+      "ctaLink": "https://waitlist.godspeedbulldogs.com"
     },
     {
       "id": "stud-service",
@@ -53,7 +53,7 @@
       ],
       "image": "assets/images/bulldogs/stud-hero.jpg",
       "cta": "Learn More",
-      "ctaLink": "contact.html"
+      "ctaLink": "inquiry.html"
     },
     {
       "id": "puppy-care-package",

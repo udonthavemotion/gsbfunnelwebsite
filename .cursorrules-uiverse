@@ -1,0 +1,210 @@
+# Cursor AI - Uiverse Component Instructions
+
+## When User Says: "Add a Uiverse component"
+
+### Step 1: Identify Component
+Ask user for Uiverse.io URL or component description.
+
+### Step 2: Create Template
+1. Create `/templates/uiverse/[component-name].html`
+2. Replace colors:
+   - Any blue/purple/red → `#00e5ff` (cyan)
+   - Any green → `#00ff88` (green)
+   - Backgrounds → `#000` (black) or `rgba(0,0,0,0.6)`
+3. Add cyan glow to white text:
+   ```css
+   text-shadow: 0 0 20px rgba(0,229,255,0.6);
+   ```
+4. Change fonts to `'Poppins', sans-serif`
+5. Use variables: `{{variable_name}}`
+
+### Step 3: Add CSS
+Add component styles to `/assets/css/uiverse-components.css`:
+```css
+/* ============================================
+   [COMPONENT NAME] - Uiverse Adaptation
+   ============================================ */
+
+.component-name {
+  /* Adapted styles here */
+}
+```
+
+### Step 4: Register Defaults (Optional)
+Add to `uiverse-loader.js` in `getDefaults()` function if component needs special defaults.
+
+### Step 5: Show Usage Example
+Provide this to user:
+```javascript
+UIverse.load('component-name', {
+  property1: 'value1',
+  property2: 'value2'
+}, '#container-id');
+```
+
+## When User Says: "Add puppy cards to [page]"
+
+### Quick Implementation:
+```html
+<!-- Add to HTML head -->
+<link rel="stylesheet" href="/assets/css/puppy-cards.css?v=20250128">
+
+<!-- Add container where cards should appear -->
+<div id="puppy-grid" class="uiverse-puppy-grid"></div>
+
+<!-- Add before </body> -->
+<script src="/assets/js/uiverse-loader.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('/data/placeholder-puppies.json')
+      .then(r => r.json())
+      .then(d => UIverse.loadBulk('puppy-card', d, '#puppy-grid'));
+  });
+</script>
+```
+
+## When User Says: "Update puppy data"
+
+Direct them to edit `/data/placeholder-puppies.json`:
+```json
+{
+  "id": "puppy-x",
+  "title": "Name",
+  "subtitle": "Color • Gender",
+  "price": "$X,XXX",
+  "status": "Available",
+  "image": "/assets/images/bulldogs/image.jpg",
+  "link": "/page.html"
+}
+```
+
+## When User Says: "Add [number] placeholder puppies"
+
+Use this template and duplicate:
+```json
+{
+  "id": "puppy-[n]",
+  "title": "[Dog Name]",
+  "subtitle": "[Color] • [Male/Female]",
+  "price": "$7,500",
+  "status": "Coming Soon",
+  "image": "/assets/images/bulldogs/gallery/placeholder-[n].jpg",
+  "link": "/available-puppies.html#puppy-[n]"
+}
+```
+
+## When User Says: "Make it responsive"
+
+Puppy cards are already responsive! Breakpoints:
+- Desktop 1200px+: 4 columns
+- Laptop 992-1199px: 3 columns
+- Tablet 768-991px: 2 columns
+- Mobile <768px: 1-2 columns
+
+No additional work needed.
+
+## When User Says: "Add loading state"
+
+Already implemented! Default HTML in container:
+```html
+<div id="grid" class="uiverse-puppy-grid">
+  <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
+    <div class="spinner-uiverse-large"></div>
+    <p>Loading...</p>
+  </div>
+</div>
+```
+
+## When User Says: "Add error handling"
+
+Wrap fetch in try-catch:
+```javascript
+try {
+  const response = await fetch('/data/puppies.json');
+  if (!response.ok) throw new Error('Failed to load');
+  const data = await response.json();
+  await UIverse.loadBulk('puppy-card', data, '#grid');
+} catch (error) {
+  console.error('Error:', error);
+  document.getElementById('grid').innerHTML = `
+    <div style="text-align: center; padding: 60px 20px;">
+      <p>Unable to load puppies. Please try again later.</p>
+    </div>
+  `;
+}
+```
+
+## When User Says: "Filter by status"
+
+```javascript
+fetch('/data/puppies.json')
+  .then(r => r.json())
+  .then(data => {
+    const filtered = data.filter(p => p.status === 'Available');
+    UIverse.loadBulk('puppy-card', filtered, '#grid');
+  });
+```
+
+## Available Components
+
+1. **puppy-card** - Interactive puppy showcase
+2. **glass-card** - Service/feature card
+3. **hover-expand** - Expandable corner card
+4. **btn-primary** - Primary CTA button (use class directly)
+5. **btn-outline** - Outline CTA button (use class directly)
+
+## Status Options
+
+- `Available` - Green badge
+- `Reserved` - Cyan badge
+- `Coming Soon` - White badge
+- `Sold` - Gray badge
+
+## Color Palette (Always Use)
+
+- Cyan: `#00e5ff`
+- Green: `#00ff88`
+- Black: `#000000`
+- White: `#FFFFFF`
+- Glow: `0 0 20px rgba(0,229,255,0.6)`
+
+## Documentation Files
+
+- `UIVERSE_QUICK_START.md` - Full guide
+- `QUICK_COMMAND_REFERENCE.md` - Copy-paste commands
+- `UIVERSE_SYSTEM_SUMMARY.md` - Implementation details
+- `/templates/uiverse/README.md` - Technical docs
+
+## Common Mistakes to Avoid
+
+❌ Don't create new components when existing ones work
+❌ Don't use inline styles when CSS classes exist
+❌ Don't forget to version CSS: `?v=YYYYMMDD`
+❌ Don't skip error handling
+❌ Don't load 100+ cards at once (paginate)
+❌ Don't use colors outside brand palette
+
+## Testing Checklist
+
+Before marking complete:
+- [ ] Test on mobile (375px viewport)
+- [ ] Check hover states work
+- [ ] Verify images load
+- [ ] Test keyboard navigation
+- [ ] Check console for errors
+- [ ] Clear cache and test (Ctrl+Shift+R)
+
+## Pro Tips
+
+1. Always edit JSON, not HTML
+2. Use existing classes when possible
+3. Test on real mobile devices
+4. Version assets for cache busting
+5. Keep it simple - don't over-engineer
+
+---
+
+**When in doubt**, check `gallery.html` lines 502-1177 for working example.
+
+
+
