@@ -1,104 +1,102 @@
 # Godspeed Bulldogs Website - Cursor AI Rules
 
+## 🚀 LIVE DEPLOYMENT
+- **Domain**: https://gsbulldogs.com
+- **Hosting**: Vercel
+- **Repository**: github.com/udonthavemotion/gsbfunnelwebsite
+- **Deployed**: November 29, 2025
+
 ## Project Identity
-You are working on the Godspeed Bulldogs website - a premium English Bulldog breeding business website owned by Logan Folse in Austin, Texas. This website was transformed from a Southside Detail & Tint auto detailing template. The site's primary purpose is to capture waitlist signups and reserve deposits for upcoming litters.
+Premium English Bulldog breeding website for Godspeed Bulldogs LLC, owned by Logan Folse. Based in Houma, Louisiana. Primary goal: capture applications via GoHighLevel forms.
 
 ## Business Context
-- Business: Godspeed Bulldogs (English Bulldog breeder)
-- Owner: Logan Folse
-- Location: Austin, Texas
-- Next litter: Spring 2026
-- Pricing: $6,500-$8,500 per puppy
-- Target audience: Gen Z & Millennials (25-40 years old)
-- First litter success: Sold to professional athletes (Jalen Reed, Maason)
+- **Business**: Godspeed Bulldogs LLC
+- **Owner**: Logan Folse
+- **Location**: Houma, Louisiana
+- **Phone**: (985) 217-0368
+- **Email**: godspeedbulldogs@gmail.com
+- **Instagram**: @godspeedbulldogs
+- **Next litter**: Spring 2026
+- **Pricing**: $6,500-$8,500 per puppy
 
 ## Brand Guidelines - CRITICAL
 - **Color Palette**: Black (#000), White (#FFF), Cyan (#00e5ff), Green (#00ff88)
 - **Visual Style**: Luxury-streetwear fusion aesthetic with cyan/green accents
-- **MANDATORY**: ALL white text MUST have cyan glow effect: `text-shadow: 0 0 20px rgba(0,229,255,0.6)` or similar
+- **MANDATORY**: ALL white text MUST have cyan glow: `text-shadow: 0 0 20px rgba(0,229,255,0.6)`
 - **Typography**: Poppins font family (weights: 300, 400, 500, 600, 700, 800)
-- **Logo Paths**: `/assets/images/logo/` (with fallback to `/assets/images/original logo/`)
+- **Logo**: `/assets/images/logo.png`
 
 ## Technical Stack
 - Pure HTML/CSS/JavaScript (NO frameworks)
-- GoHighLevel CRM integration via webhook forms
-- Mobile-first responsive design (test on 375px, 414px, 768px)
-- Performance-optimized: lazy loading, image optimization
-- Hero section uses image carousel (NOT video) for better performance
-
-## Development Standards
-- **Mobile-First**: Always design for mobile first, then scale up
-- **Performance Targets**: Lighthouse 90+ mobile, 95+ desktop
-- **Images**: Use lazy loading (`loading="lazy"`), responsive srcset where appropriate
-- **Touch Targets**: Minimum 44x44px for mobile
-- **No Emojis**: Unless explicitly requested by user
-- **Cyan Glow**: Apply to ALL white text elements (headings, body text, links, buttons, footer)
-- **Code Style**: Clean, semantic HTML; organized CSS; vanilla JavaScript
-
-## File Structure
-- **Config Files**: `/content/*.json` (business-info, branding, services, testimonials, social-links)
-- **Images**: `/assets/images/bulldogs/` (hero, gallery, parents, lifestyle subfolders)
-- **Pages**: `index.html`, `waitlist.html`, `thank-you.html`, `gallery.html`
-- **Styling**: `/assets/css/` (nav.css, style.css, products-grid.css, products.css)
-- **Scripts**: `/assets/js/` (nav.js, main.js, versioning.js)
-- **Knowledge Base**: `/knowledge base/` (reference docs for GHL integration, business logic)
+- GoHighLevel forms via iframe embed (zeromotionmarketing)
+- Vercel hosting with clean URLs
+- Mobile-first responsive design
+- Performance-optimized: lazy loading, video backgrounds
 
 ## GoHighLevel Integration
-- **Form Action**: `https://services.leadconnectorhq.com/hooks/WEBHOOK_ID_HERE` (placeholder - replace with actual webhook)
-- **Form Fields**: first_name, last_name, email, phone, budget_range, timeline, preferred_gender, referral_source, comments
-- **Hidden Fields**: source="Waitlist Form", tags="Waitlist,Website Lead"
-- **Success Redirect**: `thank-you.html`
-- **Field Mapping**: Map to GHL custom fields (Budget Range, Timeline, Gender Preference, Lead Source)
+- **Form Embed**: `https://link.zeromotionmarketing.com/widget/form/ztCgosF3MVYx62Pe8eDz`
+- **Form Script**: `https://link.zeromotionmarketing.com/js/form_embed.js`
+- **Form Locations**: inquiry.html, index.html (modal), program.html
 
-## Project Status
+## File Structure
+```
+gsbulldogs/
+├── index.html              # Homepage
+├── inquiry.html            # Application form
+├── program.html            # Breeding program
+├── bloodline.html          # Dog showcase
+├── gallery.html            # Photo/video gallery
+├── available-puppies.html  # Puppy listings
+├── thank-you.html          # Form success
+├── 404.html                # Error page
+├── vercel.json             # Deployment config
+├── assets/
+│   ├── css/                # Stylesheets
+│   ├── js/                 # Scripts
+│   └── images/             # Media
+├── data/                   # JSON data
+└── content/                # Config files
+```
 
-### Completed ✅
-- Homepage transformation (index.html) - hero carousel, services, about sections
-- Waitlist form page (waitlist.html) - GHL-ready with proper field mapping
-- Thank you page (thank-you.html) - confirmation with next steps
-- Navigation & footer - updated across all pages
-- All JSON configuration files - business info, branding, services, testimonials, social links
-- SEO & meta tags - optimized for "English Bulldog breeder Austin TX"
-- Image organization - 4 hero images + 24 gallery images copied and organized
+## Development Standards
+- **Mobile-First**: Design for 375px first, scale up
+- **Performance**: Lighthouse 90+ mobile target
+- **Images**: Use `loading="lazy"` on images
+- **Touch Targets**: Minimum 44x44px
+- **Cyan Glow**: Apply to ALL white text
+- **Clean Code**: Semantic HTML, organized CSS, vanilla JS
 
-### Pending ⏳
-- Gallery page transformation (gallery.html) - masonry layout with lazy loading
-- Terms of Service update (terms-of-service.html) - breeding niche, maintain A2P compliance
-- Privacy Policy update (privacy-policy.html) - breeding business context
-- Performance optimization pass - additional lazy loading, image compression
-- Comprehensive mobile testing - multiple viewports and devices
-
-## Key Requirements
-1. **Waitlist Capture**: Primary goal - capture leads via waitlist form
-2. **Reserve Deposits**: Secondary goal - $1,000 deposit collection (handled in GHL, not website)
-3. **Mobile Optimization**: 100% mobile testing required for all changes
-4. **Performance**: Ship minimal JS, lazy-load images, optimize assets
-5. **Brand Consistency**: Cyan glow on white text, black/white/cyan/green color scheme throughout
+## Pages & Status
+| Page | File | Status |
+|------|------|--------|
+| Homepage | index.html | ✅ Live |
+| Application | inquiry.html | ✅ Live |
+| Program | program.html | ✅ Live |
+| Bloodline | bloodline.html | ✅ Live |
+| Gallery | gallery.html | ✅ Live |
+| Puppies | available-puppies.html | ✅ Live |
+| Thank You | thank-you.html | ✅ Live |
+| 404 | 404.html | ✅ Live |
+| Privacy | privacy-policy.html | ✅ Live |
+| Terms | terms-of-service.html | ✅ Live |
 
 ## Code Patterns
-- **Hero Images**: Use opacity transitions for carousel (smooth, performant)
-- **Forms**: Large touch targets, clear labels, proper validation
-- **Buttons**: Cyan/Green gradient background (#00e5ff to #00ff88), hover effects with glow
-- **Sections**: Dark backgrounds with subtle cyan/green accents
-- **Text**: White text with cyan glow shadow for visibility and brand consistency
+- **Buttons**: Cyan/Green gradient (`#00e5ff` to `#00ff88`)
+- **Text Glow**: `text-shadow: 0 0 20px rgba(0,229,255,0.6)`
+- **Video BG**: `autoplay muted loop playsinline`
+- **Forms**: GHL iframe embed, not webhook POST
 
-## Knowledge Base Reference
-- Master guide: `/knowledge base/godspeed_bulldogs_master_guide.md`
-- MVP checklist: `/knowledge base/$99 ZeroMotion Breeder System - MVP MUST-HAVE CHECKLIST.md`
-- Technical breakdown: `/knowledge base/technical_breakdown.md`
-- Business context: Owner is building this as a reusable snapshot to sell to other breeders ($99 setup + $99/month)
+## Security Notes
+- HTTPS enforced via Vercel
+- No exposed API keys in frontend
+- Forms handled by GHL (no server code)
+- A2P SMS compliance in legal pages
 
-## Next Steps Priority
-1. Gallery page with bulldog images + masonry layout + lightbox
-2. Terms of Service update (keep A2P SMS compliance language)
-3. Privacy Policy update
-4. Performance optimization (lazy loading, image compression, Lighthouse audit)
-5. Mobile testing across devices
+## Deployment
+Push to `main` → Auto-deploys to gsbulldogs.com via Vercel
 
 ## Important Notes
-- This is a reusable template - code should be maintainable and well-documented
-- A2P compliance is critical for SMS/communication - don't remove consent language
-- All forms must integrate with GoHighLevel webhooks
-- Images are sourced from Instagram export in `/godspeedbulldogs` folder
-- Test all changes on mobile viewports before marking complete
-
+- This is a reusable template for other breeders
+- A2P compliance critical - keep consent language in policies
+- All forms use GHL iframe embeds
+- Test all changes on mobile before marking complete

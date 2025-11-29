@@ -1,365 +1,186 @@
-# 🐾 Godspeed Bulldogs - Premium English Bulldog Breeder Website
+# 🐾 Godspeed Bulldogs
 
-A stunning, modern website template for English Bulldog breeders featuring a **cyan/green neon aesthetic**, **full puppy management system**, and **GoHighLevel form integration**.
+> **Premium English Bulldog Breeder | Houma, Louisiana**
 
-![Website Preview](assets/images/bulldogs/gallery/gallery-1.jpg)
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-gsbulldogs.com-00e5ff?style=for-the-badge)](https://gsbulldogs.com)
+[![Hosted on Vercel](https://img.shields.io/badge/Hosted_on-Vercel-000?style=for-the-badge&logo=vercel)](https://vercel.com)
+[![GoHighLevel](https://img.shields.io/badge/Forms-GoHighLevel-00ff88?style=for-the-badge)](https://gohighlevel.com)
 
 ---
 
-## ✨ Features
+## 🚀 Live Deployment
 
-### **🎨 Beautiful Design**
-- Premium cyan (#00e5ff) and green (#00ff88) neon color scheme
-- Glass morphism effects and glowing text shadows
-- Smooth animations and transitions
-- 100% mobile-responsive design
+| Environment | URL | Status |
+|-------------|-----|--------|
+| **Production** | [gsbulldogs.com](https://gsbulldogs.com) | ✅ Live |
+| **Repository** | [GitHub](https://github.com/udonthavemotion/gsbfunnelwebsite) | ✅ Active |
 
-### **🐕 Puppy Management**
-- Dynamic puppy gallery with filtering and sorting
-- Detailed puppy profiles with image carousels
-- Parent bloodline information display
-- Health testing badges
-- Comparison tool to compare up to 4 puppies
-
-### **📝 Waitlist Integration**
-- Beautiful, custom-designed waitlist page
-- GoHighLevel form integration (easily replaceable)
-- Animated hero section with floating elements
-- "What Happens Next" process visualization
-
-### **🔧 Easy Customization**
-- JSON-based puppy data (no coding required to add puppies!)
-- Centralized business information file
-- Simple image replacement system
-- Comprehensive customization guide included
-
-### **⚡ Performance Optimized**
-- Fast loading times
-- Optimized images and assets
-- Lazy loading for better performance
-- SEO-ready with structured data
+**Deployed:** November 29, 2025  
+**Platform:** Vercel  
+**Domain:** gsbulldogs.com  
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Godspeed-Template/
-│
-├── index.html                          # Homepage
-├── waitlist.html                       # Waitlist page with GHL form
-├── available-puppies.html              # Puppy gallery page
-├── services.html                       # Services page
-├── contact.html                        # Contact page
-├── gallery.html                        # Photo gallery
+gsbulldogs/
+├── index.html                 # Homepage - hero, about, testimonials
+├── inquiry.html               # Application form (GHL iframe)
+├── program.html               # Breeding program details
+├── bloodline.html             # Foundation dogs showcase
+├── gallery.html               # Photo/video gallery
+├── available-puppies.html     # Puppy listings
+├── thank-you.html             # Form success page
+├── 404.html                   # Custom error page
+├── privacy-policy.html        # Legal
+├── terms-of-service.html      # Legal
+├── vercel.json                # Vercel deployment config
 │
 ├── assets/
-│   ├── css/
-│   │   ├── style.css                   # Global styles
-│   │   ├── brand-colors.css            # Color scheme variables
-│   │   ├── nav.css                     # Navigation styles
-│   │   ├── waitlist-form.css           # Waitlist page styles
-│   │   ├── puppies.css                 # Available puppies styles
+│   ├── css/                   # Stylesheets
+│   │   ├── style.css          # Global styles
+│   │   ├── nav.css            # Navigation
+│   │   ├── brand-colors.css   # Color variables
 │   │   └── ...
-│   │
-│   ├── js/
-│   │   ├── main.js                     # Global JavaScript
-│   │   ├── nav.js                      # Navigation functionality
-│   │   ├── waitlist-form.js            # Waitlist interactions
-│   │   ├── puppies.js                  # Puppy filtering/sorting
+│   ├── js/                    # Scripts
+│   │   ├── main.js            # Core functionality
+│   │   ├── nav.js             # Mobile nav
 │   │   └── ...
-│   │
 │   └── images/
-│       └── bulldogs/
-│           ├── gallery/                # Puppy photos
-│           ├── hero/                   # Hero/banner images
-│           ├── parents/                # Parent dog photos
-│           └── videos/                 # Background videos
+│       ├── bulldogs/          # Dog photos & videos
+│       │   ├── gallery/       # Gallery images
+│       │   ├── hero/          # Hero backgrounds
+│       │   ├── parents/       # Sire/dam photos
+│       │   └── videos/        # MP4 background videos
+│       └── logo.png           # Brand logo
 │
 ├── data/
-│   └── puppies.json                    # ⭐ YOUR PUPPY DATA
+│   └── puppies.json           # Puppy data (placeholder)
 │
-├── content/
-│   └── business-info.json              # ⭐ YOUR BUSINESS INFO
-│
-├── CUSTOMIZATION-GUIDE.md              # 📖 COMPLETE CUSTOMIZATION GUIDE
-└── README.md                           # This file
+└── content/
+    ├── business-info.json     # Business details
+    ├── branding.json          # Brand colors/fonts
+    └── services.json          # Service offerings
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🎨 Brand Guidelines
 
-### **1. Update Your Business Information**
+| Element | Value |
+|---------|-------|
+| **Primary Color** | Cyan `#00e5ff` |
+| **Secondary Color** | Green `#00ff88` |
+| **Background** | Black `#000000` |
+| **Text** | White with cyan glow |
+| **Font** | Poppins (300-800) |
 
-Open `content/business-info.json` and replace all placeholder data:
-
-```json
-{
-  "businessName": "YOUR BUSINESS NAME",
-  "phone": "(XXX) XXX-XXXX",
-  "email": "your-email@domain.com",
-  ...
-}
-```
-
-### **2. Add Your Puppies**
-
-Open `data/puppies.json` and add/edit puppy entries:
-
-```json
-{
-  "id": "gb-2026-001",
-  "name": "Your Puppy Name",
-  "color": "Fawn",
-  "sex": "Male",
-  "age": "8 weeks",
-  "availability": "Available",
-  "price": 7500,
-  ...
-}
-```
-
-### **3. Replace Images**
-
-Upload your images to:
-- `assets/images/bulldogs/gallery/` - Puppy photos
-- `assets/images/bulldogs/parents/` - Parent dog photos
-- `assets/images/bulldogs/hero/` - Hero images
-- `assets/images/bulldogs/logo/` - Your business logo
-
-### **4. Integrate Your GoHighLevel Form**
-
-Open `waitlist.html` (lines 239-256) and replace the iframe embed code with your own GoHighLevel form embed.
-
-### **5. Test Everything**
-
-Open `index.html` in your browser and test:
-- ✅ All navigation links work
-- ✅ Mobile menu functions properly
-- ✅ Puppies display correctly
-- ✅ Waitlist form loads
-- ✅ Contact information is accurate
-
----
-
-## 📖 Full Documentation
-
-**👉 See [CUSTOMIZATION-GUIDE.md](CUSTOMIZATION-GUIDE.md) for complete, step-by-step instructions** on:
-
-- Adding/removing puppies
-- Customizing colors and branding
-- Updating images and videos
-- Configuring GoHighLevel forms
-- SEO optimization
-- Advanced customizations
-- Troubleshooting common issues
-
----
-
-## 🎨 Color Customization
-
-The site uses a **cyan/green neon theme**. To change colors:
-
-1. Open `assets/css/brand-colors.css`
-2. Update these variables:
-
+### Typography Glow Effect
+All white text uses the signature cyan glow:
 ```css
-:root {
-    --brand-cyan: #00e5ff;    /* Your primary color */
-    --brand-green: #00ff88;   /* Your secondary color */
-}
+text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
 ```
 
-3. Save and refresh - colors automatically update throughout the site!
+---
+
+## 📝 Forms & Lead Capture
+
+### GoHighLevel Integration
+Forms are embedded via iframe from the GHL white-label domain:
+
+| Form | Location | Form ID |
+|------|----------|---------|
+| Inquiry Form | `inquiry.html` | `ztCgosF3MVYx62Pe8eDz` |
+| Modal Form | `index.html` | `ztCgosF3MVYx62Pe8eDz` |
+| Program CTA | `program.html` | `ztCgosF3MVYx62Pe8eDz` |
+
+**Embed URL:** `https://link.zeromotionmarketing.com/widget/form/...`
 
 ---
 
-## 📄 Pages Included
+## ⚡ Performance
 
-| Page | File | Description |
-|------|------|-------------|
-| **Homepage** | `index.html` | Hero section, about, services overview, CTA |
-| **Available Puppies** | `available-puppies.html` | Filterable puppy gallery with modals |
-| **Waitlist** | `waitlist.html` | Premium waitlist page with GHL form |
-| **Services** | `services.html` | Breeding services, stud services, etc. |
-| **Contact** | `contact.html` | Contact information and form |
-| **Gallery** | `gallery.html` | Photo/video gallery |
+- **Clean URLs:** `/inquiry` instead of `/inquiry.html`
+- **Asset Caching:** 1 year for CSS/JS/images
+- **Lazy Loading:** Images load on scroll
+- **Mobile-First:** Responsive from 320px+
+- **Videos:** MP4 background loops (autoplay, muted)
 
 ---
 
-## 🛠️ Technical Details
+## 🔧 Local Development
 
-### **Built With:**
-- Pure HTML5, CSS3, JavaScript (no frameworks!)
-- Google Fonts (Poppins)
-- GoHighLevel form integration
-- JSON-based data management
+```bash
+# Clone the repo
+git clone https://github.com/udonthavemotion/gsbfunnelwebsite.git
+cd gsbfunnelwebsite
 
-### **Browser Support:**
-- ✅ Chrome (latest)
-- ✅ Safari (latest)
-- ✅ Firefox (latest)
-- ✅ Edge (latest)
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+# Start local server
+python -m http.server 8080
 
-### **Performance:**
-- Optimized CSS with CSS variables
-- Lazy loading for images
-- Minified assets for production
-- Fast load times (< 3 seconds)
+# Open browser
+# http://localhost:8080
+```
 
 ---
 
-## 📱 Mobile Responsive
+## 📞 Business Info
 
-The entire site is **mobile-first** and looks perfect on:
-- 📱 Smartphones (320px+)
-- 📱 Tablets (768px+)
-- 💻 Laptops (1024px+)
-- 🖥️ Desktops (1440px+)
-
----
-
-## ✅ Pre-Launch Checklist
-
-Before going live, make sure you've:
-
-- [ ] Updated all business information in `content/business-info.json`
-- [ ] Added your puppies to `data/puppies.json`
-- [ ] Replaced placeholder images with your own
-- [ ] Updated your logo
-- [ ] Integrated your GoHighLevel form
-- [ ] Tested all navigation links
-- [ ] Verified mobile responsiveness
-- [ ] Updated SEO meta tags on all pages
-- [ ] Tested form submissions
-- [ ] Updated social media links
-- [ ] Replaced demo testimonials (if applicable)
-
-See the [CUSTOMIZATION-GUIDE.md](CUSTOMIZATION-GUIDE.md) for the complete checklist.
+| Field | Value |
+|-------|-------|
+| **Business** | Godspeed Bulldogs LLC |
+| **Owner** | Logan Folse |
+| **Location** | Houma, Louisiana |
+| **Phone** | (985) 217-0368 |
+| **Email** | godspeedbulldogs@gmail.com |
+| **Instagram** | [@godspeedbulldogs](https://instagram.com/godspeedbulldogs) |
 
 ---
 
-## 🆘 Need Help?
+## 🛡️ Security
 
-### **Common Issues:**
-
-**Puppies not showing?**
-- Validate your `puppies.json` at [JSONLint.com](https://jsonlint.com)
-- Check browser console for errors
-
-**Form not loading?**
-- Verify GoHighLevel embed code is correct
-- Check that your GHL account is active
-
-**Images not displaying?**
-- Check file paths (case-sensitive!)
-- Ensure images are in correct folders
-- Check browser console for 404 errors
-
-**More help:** See the [CUSTOMIZATION-GUIDE.md](CUSTOMIZATION-GUIDE.md) for detailed troubleshooting.
+- ✅ HTTPS enforced via Vercel
+- ✅ No exposed API keys
+- ✅ Forms handled by GHL (no server-side code)
+- ✅ `robots: noindex` on thank-you/404 pages
+- ✅ A2P SMS compliance language in policies
 
 ---
 
-## 📊 Features Breakdown
+## 📊 Pages Overview
 
-### **Homepage Features:**
-- Animated hero section with video background
-- Statistics counter
-- About/breeding philosophy section
-- Featured puppies preview
-- Testimonials section
-- Call-to-action sections
-- Footer with contact info and social links
-
-### **Available Puppies Page Features:**
-- Real-time filtering by:
-  - Color (Fawn, Brindle, White, Red, Combination)
-  - Gender (Male/Female)
-  - Availability (Available, Reserved, Coming Soon)
-  - Price range (slider)
-- Sorting options:
-  - Featured
-  - Price (low to high, high to low)
-  - Age (youngest/oldest first)
-  - Name (A-Z)
-- Detailed puppy modals with:
-  - Image carousel
-  - Full puppy information
-  - Parent bloodline details
-  - Health testing badges
-  - Sharing functionality
-- Puppy comparison tool (compare up to 4 puppies side-by-side)
-- Mobile-friendly filter panel
-- Active filter pills
-- URL parameter support for shareable filtered views
-
-### **Waitlist Page Features:**
-- Animated hero with floating orb backgrounds
-- Premium badge indicator
-- Animated gradient text
-- Trust/credibility indicators
-- Glass morphism form container
-- "What Happens Next" 4-step process
-- FAQ callout section
-- Fully customizable GoHighLevel form integration
+| Page | Purpose | Has Form |
+|------|---------|----------|
+| Home | Hero, about, social proof | ✅ Modal |
+| Inquiry | Main application | ✅ Primary |
+| Program | Breeding philosophy | ✅ CTA |
+| Bloodline | Dog showcase | ❌ |
+| Gallery | Photos & videos | ❌ |
+| Puppies | Listings | ❌ |
+| Thank You | Form success | ❌ |
+| 404 | Error page | ❌ |
 
 ---
 
-## 🎯 Perfect For:
+## 🚀 Deployment
 
-- English Bulldog breeders
-- French Bulldog breeders
-- Any dog breeding business
-- Pet adoption centers
-- Kennel clubs
-- Show dog breeders
+### Automatic (via Vercel)
+Push to `main` branch → Auto-deploys to gsbulldogs.com
 
----
-
-## 📞 Support Resources
-
-- **Customization Guide:** [CUSTOMIZATION-GUIDE.md](CUSTOMIZATION-GUIDE.md)
-- **JSON Validator:** [JSONLint.com](https://jsonlint.com)
-- **Image Compression:** [TinyPNG.com](https://tinypng.com)
-- **HTML/CSS Help:** [W3Schools.com](https://w3schools.com)
-
----
-
-## 🔄 Version History
-
-**Version 2.0** (January 2025)
-- Complete redesign with cyan/green neon aesthetic
-- Added waitlist page with premium design
-- Integrated GoHighLevel form system
-- Created JSON-based puppy management
-- Added filtering and comparison features
-- Mobile-first responsive redesign
-- Performance optimizations
-- Comprehensive documentation
+### Manual Deploy
+```bash
+git add -A
+git commit -m "Your message"
+git push origin main
+```
 
 ---
 
 ## 📝 License
 
-This template is provided as-is for your business use. Feel free to customize and modify as needed for your breeding business.
+Private repository. © 2025 Godspeed Bulldogs LLC. All rights reserved.
 
 ---
 
-## 🐾 Credits
-
-**Design & Development:** Zero Motion Marketing
-**Color Scheme:** Cyan (#00e5ff) / Green (#00ff88) Neon Aesthetic
-**Fonts:** Poppins (Google Fonts)
-**Icons:** SVG inline
-**Form Integration:** GoHighLevel
-
----
-
-**Ready to launch your premium bulldog breeding website?**
-Start with the [CUSTOMIZATION-GUIDE.md](CUSTOMIZATION-GUIDE.md) and have your site live in under an hour! 🚀
-
----
-
-*Made with ❤️ for English Bulldog Breeders*
+**Built with ❤️ by Zero Motion Marketing**
