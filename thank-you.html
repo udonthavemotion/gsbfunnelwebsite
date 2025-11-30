@@ -6,6 +6,24 @@
   <title>Thank You - Successfully Joined! | Godspeed Bulldogs</title>
   <meta name="description" content="Thank you for joining the Godspeed Bulldogs family. You'll receive exclusive updates about available English Bulldog puppies.">
   <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Google Analytics 4 (GA4) with Conversion Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFHE3PMYYV"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CFHE3PMYYV', {
+          'send_page_view': true,
+          'anonymize_ip': true
+      });
+      // Track form submission as a conversion event
+      gtag('event', 'generate_lead', {
+          'event_category': 'form',
+          'event_label': 'Puppy Application Submitted',
+          'value': 1
+      });
+  </script>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
