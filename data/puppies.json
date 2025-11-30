@@ -14,20 +14,20 @@
         "assets/images/bulldogs/gallery/gallery-2.jpg",
         "assets/images/bulldogs/gallery/gallery-3.jpg"
       ],
-      "description": "Atlas is a stunning fawn male with an incredible temperament. He's confident, playful, and loves everyone he meets. From champion bloodlines with excellent health testing on both parents.",
+      "description": "Atlas is a stunning fawn male with an incredible temperament. He's confident, playful, and loves everyone he meets. From proven bloodlines with excellent health testing on both parents.",
       "parentInfo": {
         "mother": {
           "name": "Lady Godiva",
           "color": "Fawn",
           "weight": "48 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
         },
         "father": {
           "name": "Zeus",
           "color": "Brindle",
           "weight": "55 lbs",
-          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "certifications": ["AKC Certified", "OFA Hip Excellent"],
           "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
         }
       }
@@ -53,14 +53,14 @@
           "name": "Lady Godiva",
           "color": "Fawn",
           "weight": "48 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
         },
         "father": {
           "name": "Zeus",
           "color": "Brindle",
           "weight": "55 lbs",
-          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "certifications": ["AKC Certified", "OFA Hip Excellent"],
           "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
         }
       }
@@ -85,14 +85,14 @@
           "name": "Duchess",
           "color": "White",
           "weight": "45 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-10.jpg"
         },
         "father": {
           "name": "King",
           "color": "White",
           "weight": "52 lbs",
-          "certifications": ["AKC Grand Champion", "OFA Hip Excellent"],
+          "certifications": ["AKC Certified", "OFA Hip Excellent"],
           "image": "assets/images/bulldogs/gallery/gallery-11.jpg"
         }
       }
@@ -111,20 +111,20 @@
         "assets/images/bulldogs/gallery/gallery-13.jpg",
         "assets/images/bulldogs/gallery/gallery-1.jpg"
       ],
-      "description": "Lola is a rare red female with striking coloration and an amazing personality. She's intelligent, playful, and bonds quickly. From champion bloodlines with impeccable health records.",
+      "description": "Lola is a rare red female with striking coloration and an amazing personality. She's intelligent, playful, and bonds quickly. From proven bloodlines with impeccable health records.",
       "parentInfo": {
         "mother": {
           "name": "Ruby",
           "color": "Red",
           "weight": "46 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-2.jpg"
         },
         "father": {
           "name": "Titan",
           "color": "Red Brindle",
           "weight": "54 lbs",
-          "certifications": ["AKC Champion", "OFA Hip Good"],
+          "certifications": ["AKC Certified", "OFA Hip Good"],
           "image": "assets/images/bulldogs/gallery/gallery-3.jpg"
         }
       }
@@ -143,20 +143,20 @@
         "assets/images/bulldogs/gallery/gallery-15.jpg",
         "assets/images/bulldogs/gallery/gallery-4.jpg"
       ],
-      "description": "Rocky is a handsome brindle male with a stocky build and friendly demeanor. He loves to play and is great with other dogs. Perfect family companion with champion genetics.",
+      "description": "Rocky is a handsome brindle male with a stocky build and friendly demeanor. He loves to play and is great with other dogs. Perfect family companion with quality genetics.",
       "parentInfo": {
         "mother": {
           "name": "Lady Godiva",
           "color": "Fawn",
           "weight": "48 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
         },
         "father": {
           "name": "Zeus",
           "color": "Brindle",
           "weight": "55 lbs",
-          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "certifications": ["AKC Certified", "OFA Hip Excellent"],
           "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
         }
       }
@@ -182,14 +182,14 @@
           "name": "Lady Godiva",
           "color": "Fawn",
           "weight": "48 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-5.jpg"
         },
         "father": {
           "name": "Zeus",
           "color": "Brindle",
           "weight": "55 lbs",
-          "certifications": ["AKC Champion", "OFA Hip Excellent"],
+          "certifications": ["AKC Certified", "OFA Hip Excellent"],
           "image": "assets/images/bulldogs/gallery/gallery-8.jpg"
         }
       }
@@ -208,20 +208,20 @@
         "assets/images/bulldogs/gallery/gallery-10.jpg",
         "assets/images/bulldogs/gallery/gallery-11.jpg"
       ],
-      "description": "Max is from our upcoming Winter 2026 litter. He'll be a stunning tri-color male with unique markings. From champion parents with excellent health testing. Join our waitlist for priority selection!",
+      "description": "Max is from our upcoming Winter 2026 litter. He'll be a stunning tri-color male with unique markings. From quality parents with excellent health testing. Join our waitlist for priority selection!",
       "parentInfo": {
         "mother": {
           "name": "Duchess",
           "color": "White",
           "weight": "45 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-10.jpg"
         },
         "father": {
           "name": "Titan",
           "color": "Red Brindle",
           "weight": "54 lbs",
-          "certifications": ["AKC Champion", "OFA Hip Good"],
+          "certifications": ["AKC Certified", "OFA Hip Good"],
           "image": "assets/images/bulldogs/gallery/gallery-3.jpg"
         }
       }
@@ -241,20 +241,20 @@
         "assets/images/bulldogs/gallery/gallery-7.jpg",
         "assets/images/bulldogs/gallery/gallery-8.jpg"
       ],
-      "description": "Stella was a gorgeous red female with exceptional conformation. She found her perfect match with a family in Florida. This is the quality you can expect from our champion bloodlines!",
+      "description": "Stella was a gorgeous red female with exceptional conformation. She found her perfect match with a family in Florida. This is the quality you can expect from our proven bloodlines!",
       "parentInfo": {
         "mother": {
           "name": "Ruby",
           "color": "Red",
           "weight": "46 lbs",
-          "certifications": ["AKC Champion", "OFA Certified"],
+          "certifications": ["AKC Certified", "OFA Certified"],
           "image": "assets/images/bulldogs/gallery/gallery-2.jpg"
         },
         "father": {
           "name": "Titan",
           "color": "Red Brindle",
           "weight": "54 lbs",
-          "certifications": ["AKC Champion", "OFA Hip Good"],
+          "certifications": ["AKC Certified", "OFA Hip Good"],
           "image": "assets/images/bulldogs/gallery/gallery-3.jpg"
         }
       }
